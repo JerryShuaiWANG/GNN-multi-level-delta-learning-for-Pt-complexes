@@ -1,0 +1,175 @@
+TITLE     130.mol
+REMARK   4      COMPLIES WITH FORMAT V. 3.0, 1-DEC-2006
+REMARK 888
+REMARK 888 WRITTEN BY MAESTRO (A PRODUCT OF SCHRODINGER, LLC)
+HETATM    1  C1  UNK   900      -1.868  -0.211   0.215  1.00  0.00           C  
+HETATM    2  C2  UNK   900      -1.795  -1.563   0.155  1.00  0.00           C  
+HETATM    3  N1  UNK   900      -0.495  -2.208   0.108  1.00  0.00           N  
+HETATM    4  C3  UNK   900       0.628  -1.619   0.130  1.00  0.00           C  
+HETATM    5  C4  UNK   900       0.664  -0.082   0.198  1.00  0.00           C  
+HETATM    6  C5  UNK   900      -0.532   0.590   0.237  1.00  0.00           C  
+HETATM    7  C6  UNK   900      -2.970  -2.577   0.131  1.00  0.00           C  
+HETATM    8  C7  UNK   900       1.842  -2.600   0.085  1.00  0.00           C  
+HETATM    9  C8  UNK   900      -4.284  -2.275   0.163  1.00  0.00           C  
+HETATM   10  C9  UNK   900      -5.307  -3.436   0.168  1.00  0.00           C  
+HETATM   11  C10 UNK   900      -4.881  -4.737   0.142  1.00  0.00           C  
+HETATM   12  C11 UNK   900      -3.370  -5.064   0.093  1.00  0.00           C  
+HETATM   13  C12 UNK   900      -2.498  -4.038   0.074  1.00  0.00           C  
+HETATM   14  N2  UNK   900       1.518  -3.872   0.044  1.00  0.00           N  
+HETATM   15  C13 UNK   900       2.528  -4.941   0.049  1.00  0.00           C  
+HETATM   16  C14 UNK   900       3.845  -4.602   0.069  1.00  0.00           C  
+HETATM   17  C15 UNK   900       4.262  -3.129   0.089  1.00  0.00           C  
+HETATM   18  C16 UNK   900       3.314  -2.162   0.098  1.00  0.00           C  
+HETATM   19 PT1  UNK   900      -0.448  -4.153  -0.016  1.00  0.00          Pt  
+HETATM   20 CL1  UNK   900      -0.340  -6.400  -0.388  1.00  0.00          Cl  
+HETATM   21  C17 UNK   900       4.947  -5.668   0.069  1.00  0.00           C  
+HETATM   22  C18 UNK   900       6.257  -5.293   0.084  1.00  0.00           C  
+HETATM   23  C19 UNK   900       6.679  -3.798   0.100  1.00  0.00           C  
+HETATM   24  C20 UNK   900       5.758  -2.794   0.102  1.00  0.00           C  
+HETATM   25  C21 UNK   900      -0.554   2.128   0.302  1.00  0.00           C  
+HETATM   26  C22 UNK   900       0.610   2.822   0.327  1.00  0.00           C  
+HETATM   27  C23 UNK   900       0.589   4.360   0.394  1.00  0.00           C  
+HETATM   28  C24 UNK   900      -0.594   5.021   0.426  1.00  0.00           C  
+HETATM   29  C25 UNK   900      -1.917   4.233   0.397  1.00  0.00           C  
+HETATM   30  C26 UNK   900      -1.898   2.879   0.339  1.00  0.00           C  
+HETATM   31  F1  UNK   900      -6.629  -3.165   0.200  1.00  0.00           F  
+HETATM   32  F2  UNK   900      -2.938  -6.343   0.066  1.00  0.00           F  
+HETATM   33  C27 UNK   900      -3.261   4.983   0.433  1.00  0.00           C  
+HETATM   34  C28 UNK   900      -3.713   5.296  -1.006  1.00  0.00           C  
+HETATM   35  C29 UNK   900      -4.321   4.106   1.125  1.00  0.00           C  
+HETATM   36  C30 UNK   900      -3.093   6.299   1.215  1.00  0.00           C  
+HETATM   37  C31 UNK   900       1.911   5.148   0.424  1.00  0.00           C  
+HETATM   38  C32 UNK   900       2.999   4.300   1.110  1.00  0.00           C  
+HETATM   39  C33 UNK   900       2.348   5.474  -1.017  1.00  0.00           C  
+HETATM   40  C34 UNK   900       1.711   6.458   1.208  1.00  0.00           C  
+HETATM   41  H1  UNK   900      -2.813   0.289   0.246  1.00  0.00           H  
+HETATM   42  H2  UNK   900       1.594   0.447   0.214  1.00  0.00           H  
+HETATM   43  H3  UNK   900      -4.612  -1.256   0.187  1.00  0.00           H  
+HETATM   44  H4  UNK   900      -5.597  -5.532   0.155  1.00  0.00           H  
+HETATM   45  H5  UNK   900       2.231  -5.969   0.035  1.00  0.00           H  
+HETATM   46  H6  UNK   900       3.582  -1.126   0.115  1.00  0.00           H  
+HETATM   47  H7  UNK   900       4.687  -6.706   0.058  1.00  0.00           H  
+HETATM   48  H8  UNK   900       7.014  -6.048   0.084  1.00  0.00           H  
+HETATM   49  H9  UNK   900       7.719  -3.551   0.109  1.00  0.00           H  
+HETATM   50  H10 UNK   900       6.078  -1.773   0.114  1.00  0.00           H  
+HETATM   51  H11 UNK   900       1.544   2.301   0.300  1.00  0.00           H  
+HETATM   52  H12 UNK   900      -0.609   6.090   0.472  1.00  0.00           H  
+HETATM   53  H13 UNK   900      -2.817   2.331   0.320  1.00  0.00           H  
+HETATM   54  H14 UNK   900      -2.976   5.905  -1.487  1.00  0.00           H  
+HETATM   55  H15 UNK   900      -3.829   4.382  -1.550  1.00  0.00           H  
+HETATM   56  H16 UNK   900      -4.647   5.817  -0.981  1.00  0.00           H  
+HETATM   57  H17 UNK   900      -4.007   3.889   2.124  1.00  0.00           H  
+HETATM   58  H18 UNK   900      -5.255   4.628   1.149  1.00  0.00           H  
+HETATM   59  H19 UNK   900      -4.438   3.192   0.581  1.00  0.00           H  
+HETATM   60  H20 UNK   900      -4.027   6.821   1.240  1.00  0.00           H  
+HETATM   61  H21 UNK   900      -2.779   6.082   2.215  1.00  0.00           H  
+HETATM   62  H22 UNK   900      -2.357   6.908   0.735  1.00  0.00           H  
+HETATM   63  H23 UNK   900       2.695   4.074   2.111  1.00  0.00           H  
+HETATM   64  H24 UNK   900       3.138   3.390   0.565  1.00  0.00           H  
+HETATM   65  H25 UNK   900       3.918   4.847   1.131  1.00  0.00           H  
+HETATM   66  H26 UNK   900       1.592   6.063  -1.494  1.00  0.00           H  
+HETATM   67  H27 UNK   900       3.267   6.021  -0.996  1.00  0.00           H  
+HETATM   68  H28 UNK   900       2.487   4.564  -1.562  1.00  0.00           H  
+HETATM   69  H29 UNK   900       2.630   7.005   1.229  1.00  0.00           H  
+HETATM   70  H30 UNK   900       0.956   7.047   0.732  1.00  0.00           H  
+HETATM   71  H31 UNK   900       1.408   6.231   2.209  1.00  0.00           H  
+CONECT    1    2    6   41
+CONECT    1    2
+CONECT    2    1    3    7
+CONECT    2    1
+CONECT    3    2    4   19
+CONECT    3    4
+CONECT    4    3    5    8
+CONECT    4    3
+CONECT    5    4    6   42
+CONECT    5    6
+CONECT    6    1    5   25
+CONECT    6    5
+CONECT    7    2    9   13
+CONECT    7    9
+CONECT    8    4   14   18
+CONECT    8   14
+CONECT    9    7   10   43
+CONECT    9    7
+CONECT   10    9   11   31
+CONECT   10   11
+CONECT   11   10   12   44
+CONECT   11   10
+CONECT   12   11   13   32
+CONECT   12   13
+CONECT   13    7   12   19
+CONECT   13   12
+CONECT   14    8   15   19
+CONECT   14    8
+CONECT   15   14   16   45
+CONECT   15   16
+CONECT   16   15   17   21
+CONECT   16   15
+CONECT   17   16   18   24
+CONECT   17   18
+CONECT   18    8   17   46
+CONECT   18   17
+CONECT   19    3   13   14   20
+CONECT   20   19
+CONECT   21   16   22   47
+CONECT   21   22
+CONECT   22   21   23   48
+CONECT   22   21
+CONECT   23   22   24   49
+CONECT   23   24
+CONECT   24   17   23   50
+CONECT   24   23
+CONECT   25    6   26   30
+CONECT   25   26
+CONECT   26   25   27   51
+CONECT   26   25
+CONECT   27   26   28   37
+CONECT   27   28
+CONECT   28   27   29   52
+CONECT   28   27
+CONECT   29   28   30   33
+CONECT   29   30
+CONECT   30   25   29   53
+CONECT   30   29
+CONECT   31   10
+CONECT   32   12
+CONECT   41    1
+CONECT   42    5
+CONECT   43    9
+CONECT   44   11
+CONECT   45   15
+CONECT   46   18
+CONECT   47   21
+CONECT   48   22
+CONECT   49   23
+CONECT   50   24
+CONECT   51   26
+CONECT   52   28
+CONECT   53   30
+CONECT   33   29   34   35   36
+CONECT   34   33   54   55   56
+CONECT   35   33   57   58   59
+CONECT   36   33   60   61   62
+CONECT   54   34
+CONECT   55   34
+CONECT   56   34
+CONECT   57   35
+CONECT   58   35
+CONECT   59   35
+CONECT   60   36
+CONECT   61   36
+CONECT   62   36
+CONECT   37   27   38   39   40
+CONECT   38   37   63   64   65
+CONECT   39   37   66   67   68
+CONECT   40   37   69   70   71
+CONECT   63   38
+CONECT   64   38
+CONECT   65   38
+CONECT   66   39
+CONECT   67   39
+CONECT   68   39
+CONECT   69   40
+CONECT   70   40
+CONECT   71   40
+END   

@@ -1,0 +1,309 @@
+Please install apex for mixed precision training from: https://github.com/NVIDIA/apex
+{'batch_size': 469, 'epochs': 100, 'eval_every_n_epochs': 1, 'fine_tune_from': '600-512-Aug30_17-01-09', 'log_every_n_steps': 50, 'fp16_precision': False, 'init_lr': 0.0005, 'init_base_lr': 0.0001, 'weight_decay': '1e-6', 'gpu': 'cuda:0', 'task_name': 'PDB', 'model_type': 'gcn', 'model': {'num_layer': 5, 'emb_dim': 600, 'feat_dim': 512, 'drop_ratio': 0, 'pool': 'mean'}, 'dataset': {'num_workers': 0, 'valid_size': 0, 'test_size': 0, 'splitting': 'random', 'task': 'regression', 'data_path': './data/pdb/external_test_with_structure_name_and_QM_used.csv'}, 'aug': 'subgraph'}
+Running on: cuda:0
+<csv.DictReader object at 0x2aab05fb6e90>
+OrderedDict([('\ufeffStructure', '5'), ('HOMO', '-0.208636747'), ('LUMO', '-0.078965032'), ('dipolemoment', '7.65962449'), ('H_T1_S1', '9.339999998'), ('H_T1_S0', '161.29'), ('f', '-7.875076181'), ('emission_energy', '2.40296'), ('density_Pt', '14.12128024'), ('CT_S1', '0.9274'), ('R_EH _S1a', '0.4906'), ('LAMBDA_S1', '4.965'), ('R_EH _S1b', '3.0549'), ('CT_S2', '0.9428'), ('R_EH _S2a', '0.3765'), ('LAMBDA_S2', '5.937'), ('R_EH _S2b', '4.7722'), ('CT_S3', '0.8164'), ('R_EH _S3a', '0.576'), ('LAMBDA_S3', '4.4189'), ('R_EH _S3b', '1.2223'), ('CT_T1', '0.8248'), ('R_EH _T1a', '0.4964'), ('LAMBDA_T1', '4.2653'), ('R_EH _T1b', '2.9224'), ('CT_T2', '0.8493'), ('R_EH _T2a', '0.4449'), ('LAMBDA_T2', '4.9565'), ('R_EH _T2b', '3.6926'), ('CT_T3', '0.7184'), ('R_EH _T3a', '0.6016'), ('LAMBDA_T3', '3.6894'), ('R_EH _T3b', '1.0924'), ('coor_bond_type (1)', '1'), ('coor_bond_type (2)', '2'), ('coor_bond_type (3)', '2'), ('coor_bond_type (4)', '3'), ('coor_bond_length (1)', '1.92110411'), ('coor_bond_length (2)', '2.015064267'), ('coor_bond_length (3)', '2.092635181'), ('coor_bond_length (4)', '2.135203503'), ('density_coor (1)', '4.841188817'), ('density_coor (2)', '5.324518644'), ('density_coor (3)', '5.324684967'), ('density_coor (4)', '5.744660819'), ('Calc_Kr', '5.128706741'), ('Calc_lambda', ''), ('refractive index', '1.4448'), ('E_T(30)', ''), ('E_T^N', ''), ('Quantum Yield', ''), ('Exp. Kr', '5.071355909'), ('lambda', ''), ('Exp. lifetime', ''), ('', ''), ('Refer', '')])
+OrderedDict([('\ufeffStructure', '9'), ('HOMO', '-0.194031074'), ('LUMO', '-0.083213993'), ('dipolemoment', '5.36336596'), ('H_T1_S1', '6.230000007'), ('H_T1_S0', '134.19'), ('f', '-7.736035133'), ('emission_energy', '2.09459'), ('density_Pt', '14.12127939'), ('CT_S1', '0.9538'), ('R_EH _S1a', '0.3953'), ('LAMBDA_S1', '5.6098'), ('R_EH _S1b', '3.8449'), ('CT_S2', '0.9894'), ('R_EH _S2a', '0.1788'), ('LAMBDA_S2', '6.3786'), ('R_EH _S2b', '5.5328'), ('CT_S3', '0.8773'), ('R_EH _S3a', '0.4244'), ('LAMBDA_S3', '5.1032'), ('R_EH _S3b', '3.4286'), ('CT_T1', '0.9027'), ('R_EH _T1a', '0.3984'), ('LAMBDA_T1', '5.2194'), ('R_EH _T1b', '3.8078'), ('CT_T2', '0.7774'), ('R_EH _T2a', '0.4372'), ('LAMBDA_T2', '4.356'), ('R_EH _T2b', '2.6187'), ('CT_T3', '0.774'), ('R_EH _T3a', '0.4963'), ('LAMBDA_T3', '4.2234'), ('R_EH _T3b', '1.5162'), ('coor_bond_type (1)', '1'), ('coor_bond_type (2)', '2'), ('coor_bond_type (3)', '2'), ('coor_bond_type (4)', '3'), ('coor_bond_length (1)', '1.969138136'), ('coor_bond_length (2)', '2.008996516'), ('coor_bond_length (3)', '2.075720839'), ('coor_bond_length (4)', '2.171968002'), ('density_coor (1)', '4.840786825'), ('density_coor (2)', '5.324564574'), ('density_coor (3)', '5.324638897'), ('density_coor (4)', '5.744429543'), ('Calc_Kr', '5.025157337'), ('Calc_lambda', ''), ('refractive index', '1.4448'), ('E_T(30)', ''), ('E_T^N', ''), ('Quantum Yield', ''), ('Exp. Kr', '4.711934982'), ('lambda', ''), ('Exp. lifetime', ''), ('', ''), ('Refer', '')])
+OrderedDict([('\ufeffStructure', '36'), ('HOMO', '-0.207900994'), ('LUMO', '-0.079789499'), ('dipolemoment', '4.66022883'), ('H_T1_S1', '27.97999999'), ('H_T1_S0', '48.53999999'), ('f', '-1.04E+01'), ('emission_energy', '2.1875'), ('density_Pt', '14.12127948'), ('CT_S1', '0.9427'), ('R_EH _S1a', '0.5527'), ('LAMBDA_S1', '5.2539'), ('R_EH _S1b', '3.0874'), ('CT_S2', '0.7932'), ('R_EH _S2a', '0.6629'), ('LAMBDA_S2', '4.0975'), ('R_EH _S2b', '1.0498'), ('CT_S3', '0.9644'), ('R_EH _S3a', '0.3508'), ('LAMBDA_S3', '5.9216'), ('R_EH _S3b', '4.6358'), ('CT_T1', '0.7332'), ('R_EH _T1a', '0.5988'), ('LAMBDA_T1', '3.98'), ('R_EH _T1b', '1.9957'), ('CT_T2', '0.8377'), ('R_EH _T2a', '0.6102'), ('LAMBDA_T2', '4.4415'), ('R_EH _T2b', '1.9673'), ('CT_T3', '0.745'), ('R_EH _T3a', '0.5859'), ('LAMBDA_T3', '3.8474'), ('R_EH _T3b', '1.2419'), ('coor_bond_type (1)', '1'), ('coor_bond_type (2)', '2'), ('coor_bond_type (3)', '2'), ('coor_bond_type (4)', '3'), ('coor_bond_length (1)', '1.972236294'), ('coor_bond_length (2)', '2.002084164'), ('coor_bond_length (3)', '2.07794562'), ('coor_bond_length (4)', '2.190223961'), ('density_coor (1)', '4.84082222'), ('density_coor (2)', '5.324344454'), ('density_coor (3)', '5.324635972'), ('density_coor (4)', '5.74483302'), ('Calc_Kr', '3.902281593'), ('Calc_lambda', ''), ('refractive index', '1.4448'), ('E_T(30)', ''), ('E_T^N', ''), ('Quantum Yield', ''), ('Exp. Kr', '4.209750628'), ('lambda', ''), ('Exp. lifetime', ''), ('', ''), ('Refer', '')])
+OrderedDict([('\ufeffStructure', '55'), ('HOMO', '-0.204710501'), ('LUMO', '-0.073981061'), ('dipolemoment', '13.14785615'), ('H_T1_S1', '52.45999998'), ('H_T1_S0', '124.22'), ('f', '-8.147700743'), ('emission_energy', '2.1844'), ('density_Pt', '14.12128358'), ('CT_S1', '0.8197'), ('R_EH _S1a', '0.5653'), ('LAMBDA_S1', '4.619'), ('R_EH _S1b', '2.8198'), ('CT_S2', '0.9535'), ('R_EH _S2a', '0.5518'), ('LAMBDA_S2', '5.7888'), ('R_EH _S2b', '2.5938'), ('CT_S3', '0.913'), ('R_EH _S3a', '0.5308'), ('LAMBDA_S3', '5.7143'), ('R_EH _S3b', '3.719'), ('CT_T1', '0.6879'), ('R_EH _T1a', '0.5638'), ('LAMBDA_T1', '3.6872'), ('R_EH _T1b', '2.5189'), ('CT_T2', '0.8116'), ('R_EH _T2a', '0.5543'), ('LAMBDA_T2', '4.51'), ('R_EH _T2b', '3.0668'), ('CT_T3', '0.8869'), ('R_EH _T3a', '0.5677'), ('LAMBDA_T3', '5.0454'), ('R_EH _T3b', '2.2966'), ('coor_bond_type (1)', '1'), ('coor_bond_type (2)', '1'), ('coor_bond_type (3)', '2'), ('coor_bond_type (4)', '2'), ('coor_bond_length (1)', '1.969305207'), ('coor_bond_length (2)', '1.971725387'), ('coor_bond_length (3)', '2.195004784'), ('coor_bond_length (4)', '2.223370864'), ('density_coor (1)', '4.840725353'), ('density_coor (2)', '4.840834859'), ('density_coor (3)', '5.324799401'), ('density_coor (4)', '5.324750561'), ('Calc_Kr', '5.105668682'), ('Calc_lambda', ''), ('refractive index', '1.4448'), ('E_T(30)', ''), ('E_T^N', ''), ('Quantum Yield', ''), ('Exp. Kr', '4.729846571'), ('lambda', ''), ('Exp. lifetime', ''), ('', ''), ('Refer', '')])
+OrderedDict([('\ufeffStructure', '56'), ('HOMO', '-0.19679394'), ('LUMO', '-0.06732814'), ('dipolemoment', '10.00605029'), ('H_T1_S1', '34.34000002'), ('H_T1_S0', '141.7799999'), ('f', '-8.619779781'), ('emission_energy', '2.15509'), ('density_Pt', '14.12128356'), ('CT_S1', '0.841'), ('R_EH _S1a', '0.626'), ('LAMBDA_S1', '4.5472'), ('R_EH _S1b', '1.6589'), ('CT_S2', '0.9408'), ('R_EH _S2a', '0.4009'), ('LAMBDA_S2', '5.2071'), ('R_EH _S2b', '3.3958'), ('CT_S3', '0.8988'), ('R_EH _S3a', '0.6365'), ('LAMBDA_S3', '5.4367'), ('R_EH _S3b', '1.6461'), ('CT_T1', '0.7051'), ('R_EH _T1a', '0.6102'), ('LAMBDA_T1', '3.7907'), ('R_EH _T1b', '1.7402'), ('CT_T2', '0.8046'), ('R_EH _T2a', '0.6228'), ('LAMBDA_T2', '4.3007'), ('R_EH _T2b', '1.5221'), ('CT_T3', '0.8229'), ('R_EH _T3a', '0.509'), ('LAMBDA_T3', '4.2748'), ('R_EH _T3b', '2.3268'), ('coor_bond_type (1)', '1'), ('coor_bond_type (2)', '1'), ('coor_bond_type (3)', '2'), ('coor_bond_type (4)', '2'), ('coor_bond_length (1)', '1.973568595'), ('coor_bond_length (2)', '1.974375091'), ('coor_bond_length (3)', '2.204079173'), ('coor_bond_length (4)', '2.21234039'), ('density_coor (1)', '4.840672255'), ('density_coor (2)', '4.840681737'), ('density_coor (3)', '5.324827985'), ('density_coor (4)', '5.324793023'), ('Calc_Kr', '4.778146576'), ('Calc_lambda', ''), ('refractive index', '1.4448'), ('E_T(30)', ''), ('E_T^N', ''), ('Quantum Yield', ''), ('Exp. Kr', '5.065266731'), ('lambda', ''), ('Exp. lifetime', ''), ('', ''), ('Refer', '')])
+OrderedDict([('\ufeffStructure', '67'), ('HOMO', '-0.206240636'), ('LUMO', '-0.06686656'), ('dipolemoment', '12.37070181'), ('H_T1_S1', '34.68'), ('H_T1_S0', '78.28000004'), ('f', '-7.103405267'), ('emission_energy', '2.63549'), ('density_Pt', '14.12128267'), ('CT_S1', '0.9161'), ('R_EH _S1a', '0.5741'), ('LAMBDA_S1', '5.4125'), ('R_EH _S1b', '2.7825'), ('CT_S2', '0.9402'), ('R_EH _S2a', '0.4253'), ('LAMBDA_S2', '5.227'), ('R_EH _S2b', '3.2286'), ('CT_S3', '0.8987'), ('R_EH _S3a', '0.5729'), ('LAMBDA_S3', '5.1219'), ('R_EH _S3b', '2.364'), ('CT_T1', '0.7593'), ('R_EH _T1a', '0.6036'), ('LAMBDA_T1', '4.4237'), ('R_EH _T1b', '1.9732'), ('CT_T2', '0.7761'), ('R_EH _T2a', '0.5974'), ('LAMBDA_T2', '4.2371'), ('R_EH _T2b', '1.6953'), ('CT_T3', '0.8153'), ('R_EH _T3a', '0.5798'), ('LAMBDA_T3', '4.3735'), ('R_EH _T3b', '1.9235'), ('coor_bond_type (1)', '1'), ('coor_bond_type (2)', '1'), ('coor_bond_type (3)', '2'), ('coor_bond_type (4)', '2'), ('coor_bond_length (1)', '1.971868403'), ('coor_bond_length (2)', '1.981391935'), ('coor_bond_length (3)', '2.155445662'), ('coor_bond_length (4)', '2.16914822'), ('density_coor (1)', '4.840215984'), ('density_coor (2)', '4.840401821'), ('density_coor (3)', '5.325426666'), ('density_coor (4)', '5.324813718'), ('Calc_Kr', '5.469103119'), ('Calc_lambda', ''), ('refractive index', '1.4448'), ('E_T(30)', ''), ('E_T^N', ''), ('Quantum Yield', ''), ('Exp. Kr', '5.375663614'), ('lambda', ''), ('Exp. lifetime', ''), ('', ''), ('Refer', '')])
+OrderedDict([('\ufeffStructure', '68'), ('HOMO', '-0.207178051'), ('LUMO', '-0.068215399'), ('dipolemoment', '12.89519557'), ('H_T1_S1', '30.03999997'), ('H_T1_S0', '79.78999997'), ('f', '-6.991136889'), ('emission_energy', '2.64298'), ('density_Pt', '14.12128263'), ('CT_S1', '0.9173'), ('R_EH _S1a', '0.5639'), ('LAMBDA_S1', '5.454'), ('R_EH _S1b', '3.0192'), ('CT_S2', '0.9439'), ('R_EH _S2a', '0.4158'), ('LAMBDA_S2', '5.2294'), ('R_EH _S2b', '3.2861'), ('CT_S3', '0.9002'), ('R_EH _S3a', '0.5491'), ('LAMBDA_S3', '5.1876'), ('R_EH _S3b', '2.768'), ('CT_T1', '0.765'), ('R_EH _T1a', '0.5959'), ('LAMBDA_T1', '4.4767'), ('R_EH _T1b', '2.1205'), ('CT_T2', '0.779'), ('R_EH _T2a', '0.5988'), ('LAMBDA_T2', '4.2983'), ('R_EH _T2b', '1.6501'), ('CT_T3', '0.8138'), ('R_EH _T3a', '0.5563'), ('LAMBDA_T3', '4.3822'), ('R_EH _T3b', '2.1998'), ('coor_bond_type (1)', '1'), ('coor_bond_type (2)', '1'), ('coor_bond_type (3)', '2'), ('coor_bond_type (4)', '2'), ('coor_bond_length (1)', '1.970955859'), ('coor_bond_length (2)', '1.981651332'), ('coor_bond_length (3)', '2.155563267'), ('coor_bond_length (4)', '2.165775612'), ('density_coor (1)', '4.840221123'), ('density_coor (2)', '4.840453512'), ('density_coor (3)', '5.325443162'), ('density_coor (4)', '5.3247995'), ('Calc_Kr', '5.527206027'), ('Calc_lambda', ''), ('refractive index', '1.4448'), ('E_T(30)', ''), ('E_T^N', ''), ('Quantum Yield', ''), ('Exp. Kr', '5.363177902'), ('lambda', ''), ('Exp. lifetime', ''), ('', ''), ('Refer', '')])
+OrderedDict([('\ufeffStructure', '70'), ('HOMO', '-0.203635668'), ('LUMO', '-0.059858881'), ('dipolemoment', '9.917906'), ('H_T1_S1', '28.70000001'), ('H_T1_S0', '75.70000012'), ('f', '-7.654303236'), ('emission_energy', '2.6251'), ('density_Pt', '14.12128247'), ('CT_S1', '0.9198'), ('R_EH _S1a', '0.6384'), ('LAMBDA_S1', '5.3594'), ('R_EH _S1b', '1.9951'), ('CT_S2', '0.9099'), ('R_EH _S2a', '0.5276'), ('LAMBDA_S2', '5.234'), ('R_EH _S2b', '2.6205'), ('CT_S3', '0.8861'), ('R_EH _S3a', '0.6078'), ('LAMBDA_S3', '5.0112'), ('R_EH _S3b', '1.3872'), ('CT_T1', '0.7293'), ('R_EH _T1a', '0.6388'), ('LAMBDA_T1', '4.1818'), ('R_EH _T1b', '1.8079'), ('CT_T2', '0.8122'), ('R_EH _T2a', '0.6406'), ('LAMBDA_T2', '4.5216'), ('R_EH _T2b', '1.3916'), ('CT_T3', '0.8241'), ('R_EH _T3a', '0.5632'), ('LAMBDA_T3', '4.5657'), ('R_EH _T3b', '2.0896'), ('coor_bond_type (1)', '1'), ('coor_bond_type (2)', '1'), ('coor_bond_type (3)', '2'), ('coor_bond_type (4)', '2'), ('coor_bond_length (1)', '1.977413968'), ('coor_bond_length (2)', '1.990188182'), ('coor_bond_length (3)', '2.162397974'), ('coor_bond_length (4)', '2.164717765'), ('density_coor (1)', '4.84022294'), ('density_coor (2)', '4.840423636'), ('density_coor (3)', '5.325366808'), ('density_coor (4)', '5.324746713'), ('Calc_Kr', '5.351028325'), ('Calc_lambda', ''), ('refractive index', '1.4448'), ('E_T(30)', ''), ('E_T^N', ''), ('Quantum Yield', ''), ('Exp. Kr', '4.83069473'), ('lambda', ''), ('Exp. lifetime', ''), ('', ''), ('Refer', '')])
+OrderedDict([('\ufeffStructure', '72'), ('HOMO', '-0.201818703'), ('LUMO', '-0.058371513'), ('dipolemoment', '10.25690866'), ('H_T1_S1', '24.08000001'), ('H_T1_S0', '91.89000014'), ('f', '-7.279253838'), ('emission_energy', '2.6332'), ('density_Pt', '14.12128242'), ('CT_S1', '0.9309'), ('R_EH _S1a', '0.609'), ('LAMBDA_S1', '5.3282'), ('R_EH _S1b', '2.2909'), ('CT_S2', '0.876'), ('R_EH _S2a', '0.6013'), ('LAMBDA_S2', '4.8631'), ('R_EH _S2b', '1.6535'), ('CT_S3', '0.8806'), ('R_EH _S3a', '0.6346'), ('LAMBDA_S3', '5.1698'), ('R_EH _S3b', '2.2554'), ('CT_T1', '0.731'), ('R_EH _T1a', '0.6122'), ('LAMBDA_T1', '4.1838'), ('R_EH _T1b', '2.1362'), ('CT_T2', '0.8297'), ('R_EH _T2a', '0.6068'), ('LAMBDA_T2', '4.4955'), ('R_EH _T2b', '1.9824'), ('CT_T3', '0.83'), ('R_EH _T3a', '0.6159'), ('LAMBDA_T3', '4.7191'), ('R_EH _T3b', '1.8588'), ('coor_bond_type (1)', '1'), ('coor_bond_type (2)', '1'), ('coor_bond_type (3)', '2'), ('coor_bond_type (4)', '2'), ('coor_bond_length (1)', '1.976879865'), ('coor_bond_length (2)', '1.985695344'), ('coor_bond_length (3)', '2.162186393'), ('coor_bond_length (4)', '2.172382333'), ('density_coor (1)', '4.840252901'), ('density_coor (2)', '4.84036404'), ('density_coor (3)', '5.325280717'), ('density_coor (4)', '5.324756209'), ('Calc_Kr', '5.445773701'), ('Calc_lambda', ''), ('refractive index', '1.4448'), ('E_T(30)', ''), ('E_T^N', ''), ('Quantum Yield', ''), ('Exp. Kr', '5.009545318'), ('lambda', ''), ('Exp. lifetime', ''), ('', ''), ('Refer', '')])
+OrderedDict([('\ufeffStructure', ' 3c1'), ('HOMO', '-0.203733759'), ('LUMO', '-0.083139369'), ('dipolemoment', '13.41020527'), ('H_T1_S1', '116.3600002'), ('H_T1_S0', '301.0500003'), ('f', '-7.167692491'), ('emission_energy', '2.33099'), ('density_Pt', '14.12128352'), ('CT_S1', '0.9581'), ('R_EH _S1a', '0.372'), ('LAMBDA_S1', '5.2601'), ('R_EH _S1b', '3.7865'), ('CT_S2', '0.894'), ('R_EH _S2a', '0.4809'), ('LAMBDA_S2', '4.7001'), ('R_EH _S2b', '2.7422'), ('CT_S3', '0.9365'), ('R_EH _S3a', '0.3818'), ('LAMBDA_S3', '5.3104'), ('R_EH _S3b', '3.6054'), ('CT_T1', '0.9141'), ('R_EH _T1a', '0.3768'), ('LAMBDA_T1', '5.0089'), ('R_EH _T1b', '3.7153'), ('CT_T2', '0.809'), ('R_EH _T2a', '0.4804'), ('LAMBDA_T2', '4.2486'), ('R_EH _T2b', '2.6997'), ('CT_T3', '0.7978'), ('R_EH _T3a', '0.4552'), ('LAMBDA_T3', '4.4816'), ('R_EH _T3b', '2.7751'), ('coor_bond_type (1)', '1'), ('coor_bond_type (2)', '1'), ('coor_bond_type (3)', '1'), ('coor_bond_type (4)', '2'), ('coor_bond_length (1)', '1.991032144'), ('coor_bond_length (2)', '2.036686279'), ('coor_bond_length (3)', '2.075885594'), ('coor_bond_length (4)', '2.138419977'), ('density_coor (1)', '4.840405931'), ('density_coor (2)', '4.840239938'), ('density_coor (3)', '4.842040216'), ('density_coor (4)', '5.325082709'), ('Calc_Kr', '5.517720061'), ('Calc_lambda', ''), ('refractive index', '1.4448'), ('E_T(30)', ''), ('E_T^N', ''), ('Quantum Yield', ''), ('Exp. Kr', '5.426511261'), ('lambda', ''), ('Exp. lifetime', ''), ('', ''), ('Refer', '')])
+OrderedDict([('\ufeffStructure', ' 3c2'), ('HOMO', '-0.203020261'), ('LUMO', '-0.062936701'), ('dipolemoment', '12.80347488'), ('H_T1_S1', '41.46000004'), ('H_T1_S0', '116.3000001'), ('f', '-7.439293944'), ('emission_energy', '2.65049'), ('density_Pt', '14.12128427'), ('CT_S1', '0.9263'), ('R_EH _S1a', '0.5671'), ('LAMBDA_S1', '5.3783'), ('R_EH _S1b', '2.5527'), ('CT_S2', '0.9278'), ('R_EH _S2a', '0.4858'), ('LAMBDA_S2', '5.2147'), ('R_EH _S2b', '2.9387'), ('CT_S3', '0.9038'), ('R_EH _S3a', '0.5631'), ('LAMBDA_S3', '5.1667'), ('R_EH _S3b', '2.0498'), ('CT_T1', '0.7623'), ('R_EH _T1a', '0.5903'), ('LAMBDA_T1', '4.4007'), ('R_EH _T1b', '2.1044'), ('CT_T2', '0.8026'), ('R_EH _T2a', '0.6159'), ('LAMBDA_T2', '4.4171'), ('R_EH _T2b', '1.7357'), ('CT_T3', '0.8143'), ('R_EH _T3a', '0.5463'), ('LAMBDA_T3', '4.3643'), ('R_EH _T3b', '1.9338'), ('coor_bond_type (1)', '1'), ('coor_bond_type (2)', '1'), ('coor_bond_type (3)', '1'), ('coor_bond_type (4)', '2'), ('coor_bond_length (1)', '1.998287517'), ('coor_bond_length (2)', '2.013840361'), ('coor_bond_length (3)', '2.060981562'), ('coor_bond_length (4)', '2.172737214'), ('density_coor (1)', '4.840417865'), ('density_coor (2)', '4.840336453'), ('density_coor (3)', '4.842069335'), ('density_coor (4)', '5.324833682'), ('Calc_Kr', '5.522005904'), ('Calc_lambda', ''), ('refractive index', '1.4448'), ('E_T(30)', ''), ('E_T^N', ''), ('Quantum Yield', ''), ('Exp. Kr', '5.484299839'), ('lambda', ''), ('Exp. lifetime', ''), ('', ''), ('Refer', '')])
+OrderedDict([('\ufeffStructure', ' 3c3'), ('HOMO', '-0.203427923'), ('LUMO', '-0.066679523'), ('dipolemoment', '12.62159165'), ('H_T1_S1', '30.33999997'), ('H_T1_S0', '129.4800001'), ('f', '-6.866613336'), ('emission_energy', '2.65716'), ('density_Pt', '14.12128438'), ('CT_S1', '0.9461'), ('R_EH _S1a', '0.4866'), ('LAMBDA_S1', '5.6259'), ('R_EH _S1b', '3.3038'), ('CT_S2', '0.9149'), ('R_EH _S2a', '0.5374'), ('LAMBDA_S2', '5.3236'), ('R_EH _S2b', '2.8457'), ('CT_S3', '0.9104'), ('R_EH _S3a', '0.5336'), ('LAMBDA_S3', '5.2862'), ('R_EH _S3b', '2.4861'), ('CT_T1', '0.7849'), ('R_EH _T1a', '0.5227'), ('LAMBDA_T1', '4.5755'), ('R_EH _T1b', '2.8366'), ('CT_T2', '0.8261'), ('R_EH _T2a', '0.5509'), ('LAMBDA_T2', '4.7251'), ('R_EH _T2b', '2.5238'), ('CT_T3', '0.8018'), ('R_EH _T3a', '0.5402'), ('LAMBDA_T3', '4.3871'), ('R_EH _T3b', '2.2439'), ('coor_bond_type (1)', '1'), ('coor_bond_type (2)', '1'), ('coor_bond_type (3)', '1'), ('coor_bond_type (4)', '2'), ('coor_bond_length (1)', '1.997074861'), ('coor_bond_length (2)', '2.014396684'), ('coor_bond_length (3)', '2.059705561'), ('coor_bond_length (4)', '2.170584483'), ('density_coor (1)', '4.840402532'), ('density_coor (2)', '4.840333054'), ('density_coor (3)', '4.842063021'), ('density_coor (4)', '5.324864942'), ('Calc_Kr', '5.710305816'), ('Calc_lambda', ''), ('refractive index', '1.4448'), ('E_T(30)', ''), ('E_T^N', ''), ('Quantum Yield', ''), ('Exp. Kr', '5.480006943'), ('lambda', ''), ('Exp. lifetime', ''), ('', ''), ('Refer', '')])
+OrderedDict([('\ufeffStructure', ' 3c4'), ('HOMO', '-0.203285565'), ('LUMO', '-0.065685187'), ('dipolemoment', '13.00676112'), ('H_T1_S1', '32.39999997'), ('H_T1_S0', '123.4900001'), ('f', '-6.835434618'), ('emission_energy', '2.65679'), ('density_Pt', '14.12128436'), ('CT_S1', '0.942'), ('R_EH _S1a', '0.5044'), ('LAMBDA_S1', '5.587'), ('R_EH _S1b', '3.1469'), ('CT_S2', '0.9178'), ('R_EH _S2a', '0.5333'), ('LAMBDA_S2', '5.339'), ('R_EH _S2b', '2.85'), ('CT_S3', '0.9084'), ('R_EH _S3a', '0.5435'), ('LAMBDA_S3', '5.2722'), ('R_EH _S3b', '2.3578'), ('CT_T1', '0.7772'), ('R_EH _T1a', '0.5364'), ('LAMBDA_T1', '4.5217'), ('R_EH _T1b', '2.7005'), ('CT_T2', '0.822'), ('R_EH _T2a', '0.5639'), ('LAMBDA_T2', '4.6714'), ('R_EH _T2b', '2.3834'), ('CT_T3', '0.8071'), ('R_EH _T3a', '0.5435'), ('LAMBDA_T3', '4.4122'), ('R_EH _T3b', '2.1918'), ('coor_bond_type (1)', '1'), ('coor_bond_type (2)', '1'), ('coor_bond_type (3)', '1'), ('coor_bond_type (4)', '2'), ('coor_bond_length (1)', '1.997767003'), ('coor_bond_length (2)', '2.013386699'), ('coor_bond_length (3)', '2.059367864'), ('coor_bond_length (4)', '2.173110444'), ('density_coor (1)', '4.840409251'), ('density_coor (2)', '4.840346808'), ('density_coor (3)', '4.842047635'), ('density_coor (4)', '5.32484449'), ('Calc_Kr', '5.70295544'), ('Calc_lambda', ''), ('refractive index', '1.4448'), ('E_T(30)', ''), ('E_T^N', ''), ('Quantum Yield', ''), ('Exp. Kr', '5.51054501'), ('lambda', ''), ('Exp. lifetime', ''), ('', ''), ('Refer', '')])
+OrderedDict([('\ufeffStructure', '666'), ('HOMO', '-0.208621123'), ('LUMO', '-0.092458283'), ('dipolemoment', '8.87258937'), ('H_T1_S1', '56.02999997'), ('H_T1_S0', '307.62'), ('f', '-7.046098229'), ('emission_energy', '2.01438'), ('density_Pt', '14.12128319'), ('CT_S1', '0.8949'), ('R_EH _S1a', '0.4853'), ('LAMBDA_S1', '5.0363'), ('R_EH _S1b', '3.8054'), ('CT_S2', '0.9204'), ('R_EH _S2a', '0.4401'), ('LAMBDA_S2', '5.7926'), ('R_EH _S2b', '4.444'), ('CT_S3', '0.8419'), ('R_EH _S3a', '0.66'), ('LAMBDA_S3', '4.999'), ('R_EH _S3b', '1.6461'), ('CT_T1', '0.8042'), ('R_EH _T1a', '0.5308'), ('LAMBDA_T1', '4.3053'), ('R_EH _T1b', '3.2508'), ('CT_T2', '0.7816'), ('R_EH _T2a', '0.5976'), ('LAMBDA_T2', '4.5292'), ('R_EH _T2b', '2.5854'), ('CT_T3', '0.8328'), ('R_EH _T3a', '0.5252'), ('LAMBDA_T3', '4.8385'), ('R_EH _T3b', '3.4497'), ('coor_bond_type (1)', '1'), ('coor_bond_type (2)', '1'), ('coor_bond_type (3)', '2'), ('coor_bond_type (4)', '2'), ('coor_bond_length (1)', '1.969040629'), ('coor_bond_length (2)', '1.987498176'), ('coor_bond_length (3)', '2.11796152'), ('coor_bond_length (4)', '2.201871023'), ('density_coor (1)', '4.84066135'), ('density_coor (2)', '4.840216933'), ('density_coor (3)', '5.324889284'), ('density_coor (4)', '5.324811867'), ('Calc_Kr', '5.387064365'), ('Calc_lambda', ''), ('refractive index', '1.4448'), ('E_T(30)', ''), ('E_T^N', ''), ('Quantum Yield', ''), ('Exp. Kr', '4.879669206'), ('lambda', ''), ('Exp. lifetime', ''), ('', ''), ('Refer', '')])
+OrderedDict([('\ufeffStructure', '667'), ('HOMO', '-0.209355682'), ('LUMO', '-0.087796742'), ('dipolemoment', '8.43218392'), ('H_T1_S1', '51.49'), ('H_T1_S0', '272.7600001'), ('f', '-7.266002889'), ('emission_energy', '2.14012'), ('density_Pt', '14.12128292'), ('CT_S1', '0.8856'), ('R_EH _S1a', '0.4924'), ('LAMBDA_S1', '4.9816'), ('R_EH _S1b', '3.6927'), ('CT_S2', '0.9243'), ('R_EH _S2a', '0.4255'), ('LAMBDA_S2', '5.869'), ('R_EH _S2b', '4.5031'), ('CT_S3', '0.8411'), ('R_EH _S3a', '0.6607'), ('LAMBDA_S3', '5.0433'), ('R_EH _S3b', '1.5483'), ('CT_T1', '0.7981'), ('R_EH _T1a', '0.5292'), ('LAMBDA_T1', '4.2743'), ('R_EH _T1b', '3.1986'), ('CT_T2', '0.7666'), ('R_EH _T2a', '0.5889'), ('LAMBDA_T2', '4.4135'), ('R_EH _T2b', '2.5701'), ('CT_T3', '0.8374'), ('R_EH _T3a', '0.5148'), ('LAMBDA_T3', '4.936'), ('R_EH _T3b', '3.3316'), ('coor_bond_type (1)', '1'), ('coor_bond_type (2)', '1'), ('coor_bond_type (3)', '2'), ('coor_bond_type (4)', '2'), ('coor_bond_length (1)', '1.972243646'), ('coor_bond_length (2)', '1.984598196'), ('coor_bond_length (3)', '2.125686242'), ('coor_bond_length (4)', '2.19267029'), ('density_coor (1)', '4.840658822'), ('density_coor (2)', '4.840213849'), ('density_coor (3)', '5.324872876'), ('density_coor (4)', '5.32480466'), ('Calc_Kr', '5.344526359'), ('Calc_lambda', ''), ('refractive index', '1.4448'), ('E_T(30)', ''), ('E_T^N', ''), ('Quantum Yield', ''), ('Exp. Kr', '5.152288344'), ('lambda', ''), ('Exp. lifetime', ''), ('', ''), ('Refer', '')])
+OrderedDict([('\ufeffStructure', '668'), ('HOMO', '-0.206717111'), ('LUMO', '-0.078601225'), ('dipolemoment', '9.4859306'), ('H_T1_S1', '69.54999997'), ('H_T1_S0', '257.28'), ('f', '-7.223425387'), ('emission_energy', '2.26415'), ('density_Pt', '14.12128302'), ('CT_S1', '0.8712'), ('R_EH _S1a', '0.5296'), ('LAMBDA_S1', '4.8815'), ('R_EH _S1b', '3.2878'), ('CT_S2', '0.8991'), ('R_EH _S2a', '0.5136'), ('LAMBDA_S2', '5.572'), ('R_EH _S2b', '3.7696'), ('CT_S3', '0.8672'), ('R_EH _S3a', '0.6551'), ('LAMBDA_S3', '5.2681'), ('R_EH _S3b', '1.2873'), ('CT_T1', '0.7674'), ('R_EH _T1a', '0.5814'), ('LAMBDA_T1', '4.0987'), ('R_EH _T1b', '2.6291'), ('CT_T2', '0.7924'), ('R_EH _T2a', '0.6317'), ('LAMBDA_T2', '4.6472'), ('R_EH _T2b', '2.1858'), ('CT_T3', '0.8128'), ('R_EH _T3a', '0.55'), ('LAMBDA_T3', '4.6627'), ('R_EH _T3b', '3.2149'), ('coor_bond_type (1)', '1'), ('coor_bond_type (2)', '1'), ('coor_bond_type (3)', '2'), ('coor_bond_type (4)', '2'), ('coor_bond_length (1)', '1.970338296'), ('coor_bond_length (2)', '1.993534549'), ('coor_bond_length (3)', '2.098080313'), ('coor_bond_length (4)', '2.199056389'), ('density_coor (1)', '4.840642782'), ('density_coor (2)', '4.840250214'), ('density_coor (3)', '5.32466344'), ('density_coor (4)', '5.3248218'), ('Calc_Kr', '5.441825681'), ('Calc_lambda', ''), ('refractive index', '1.4448'), ('E_T(30)', ''), ('E_T^N', ''), ('Quantum Yield', ''), ('Exp. Kr', '5.274157849'), ('lambda', ''), ('Exp. lifetime', ''), ('', ''), ('Refer', '')])
+OrderedDict([('\ufeffStructure', '671'), ('HOMO', '-0.198504427'), ('LUMO', '-0.063656961'), ('dipolemoment', '11.20502743'), ('H_T1_S1', '10.49'), ('H_T1_S0', '112.8800001'), ('f', '-8.570066681'), ('emission_energy', '2.17874'), ('density_Pt', '14.12128472'), ('CT_S1', '0.8027'), ('R_EH _S1a', '0.668'), ('LAMBDA_S1', '4.2975'), ('R_EH _S1b', '1.528'), ('CT_S2', '0.9737'), ('R_EH _S2a', '0.3042'), ('LAMBDA_S2', '5.5139'), ('R_EH _S2b', '4.1682'), ('CT_S3', '0.9128'), ('R_EH _S3a', '0.531'), ('LAMBDA_S3', '5.2251'), ('R_EH _S3b', '2.5604'), ('CT_T1', '0.6802'), ('R_EH _T1a', '0.6321'), ('LAMBDA_T1', '3.5125'), ('R_EH _T1b', '1.7313'), ('CT_T2', '0.9474'), ('R_EH _T2a', '0.3338'), ('LAMBDA_T2', '5.2761'), ('R_EH _T2b', '3.904'), ('CT_T3', '0.8619'), ('R_EH _T3a', '0.5596'), ('LAMBDA_T3', '4.6792'), ('R_EH _T3b', '1.7972'), ('coor_bond_type (1)', '1'), ('coor_bond_type (2)', '1'), ('coor_bond_type (3)', '2'), ('coor_bond_type (4)', '2'), ('coor_bond_length (1)', '1.962602864'), ('coor_bond_length (2)', '1.973956433'), ('coor_bond_length (3)', '2.173514435'), ('coor_bond_length (4)', '2.200746237'), ('density_coor (1)', '4.840697383'), ('density_coor (2)', '4.840826012'), ('density_coor (3)', '5.324902285'), ('density_coor (4)', '5.324847557'), ('Calc_Kr', '4.795273406'), ('Calc_lambda', ''), ('refractive index', '1.4448'), ('E_T(30)', ''), ('E_T^N', ''), ('Quantum Yield', ''), ('Exp. Kr', '4.463892989'), ('lambda', ''), ('Exp. lifetime', ''), ('', ''), ('Refer', '')])
+OrderedDict([('\ufeffStructure', '672'), ('HOMO', '-0.163983284'), ('LUMO', '-0.119034821'), ('dipolemoment', '7.71944311'), ('H_T1_S1', '28.13999998'), ('H_T1_S0', '31.50999998'), ('f', '-1.13E+01'), ('emission_energy', '0.13738'), ('density_Pt', '14.12128851'), ('CT_S1', '0.8769'), ('R_EH _S1a', '0.8445'), ('LAMBDA_S1', '5.1942'), ('R_EH _S1b', '1.4699'), ('CT_S2', '0.959'), ('R_EH _S2a', '0.3116'), ('LAMBDA_S2', '7.7941'), ('R_EH _S2b', '6.4131'), ('CT_S3', '0.9344'), ('R_EH _S3a', '0.4126'), ('LAMBDA_S3', '6.7553'), ('R_EH _S3b', '5.2094'), ('CT_T1', '0.8298'), ('R_EH _T1a', '0.8681'), ('LAMBDA_T1', '4.5229'), ('R_EH _T1b', '1.4507'), ('CT_T2', '0.8897'), ('R_EH _T2a', '0.3828'), ('LAMBDA_T2', '6.6169'), ('R_EH _T2b', '2.5716'), ('CT_T3', '0.9409'), ('R_EH _T3a', '0.3776'), ('LAMBDA_T3', '7.0517'), ('R_EH _T3b', '1.9815'), ('coor_bond_type (1)', '1'), ('coor_bond_type (2)', '1'), ('coor_bond_type (3)', '2'), ('coor_bond_type (4)', '2'), ('coor_bond_length (1)', '1.924325076'), ('coor_bond_length (2)', '1.977397026'), ('coor_bond_length (3)', '2.058324804'), ('coor_bond_length (4)', '2.082657437'), ('density_coor (1)', '4.840928081'), ('density_coor (2)', '4.841004942'), ('density_coor (3)', '5.324645323'), ('density_coor (4)', '5.324553763'), ('Calc_Kr', '0.998547167'), ('Calc_lambda', ''), ('refractive index', '1.4448'), ('E_T(30)', ''), ('E_T^N', ''), ('Quantum Yield', ''), ('Exp. Kr', '4.416640507'), ('lambda', ''), ('Exp. lifetime', ''), ('', ''), ('Refer', '')])
+OrderedDict([('\ufeffStructure', '674'), ('HOMO', '-0.192356862'), ('LUMO', '-0.060544344'), ('dipolemoment', '11.71388941'), ('H_T1_S1', '18.38'), ('H_T1_S0', '102.15'), ('f', '-9.26E+00'), ('emission_energy', '2.16633'), ('density_Pt', '14.12128523'), ('CT_S1', '0.8636'), ('R_EH _S1a', '0.5451'), ('LAMBDA_S1', '4.8697'), ('R_EH _S1b', '2.8944'), ('CT_S2', '0.9816'), ('R_EH _S2a', '0.2622'), ('LAMBDA_S2', '5.7003'), ('R_EH _S2b', '4.1784'), ('CT_S3', '0.8659'), ('R_EH _S3a', '0.6191'), ('LAMBDA_S3', '4.9614'), ('R_EH _S3b', '1.3928'), ('CT_T1', '0.6832'), ('R_EH _T1a', '0.5647'), ('LAMBDA_T1', '3.5585'), ('R_EH _T1b', '2.1848'), ('CT_T2', '0.9671'), ('R_EH _T2a', '0.2666'), ('LAMBDA_T2', '5.528'), ('R_EH _T2b', '4.1243'), ('CT_T3', '0.9327'), ('R_EH _T3a', '0.5718'), ('LAMBDA_T3', '5.315'), ('R_EH _T3b', '2.1373'), ('coor_bond_type (1)', '1'), ('coor_bond_type (2)', '1'), ('coor_bond_type (3)', '2'), ('coor_bond_type (4)', '2'), ('coor_bond_length (1)', '1.97464174'), ('coor_bond_length (2)', '1.97466073'), ('coor_bond_length (3)', '2.186136318'), ('coor_bond_length (4)', '2.186136318'), ('density_coor (1)', '4.840830988'), ('density_coor (2)', '4.840830988'), ('density_coor (3)', '5.324961148'), ('density_coor (4)', '5.324962511'), ('Calc_Kr', '4.541437102'), ('Calc_lambda', ''), ('refractive index', '1.4448'), ('E_T(30)', ''), ('E_T^N', ''), ('Quantum Yield', ''), ('Exp. Kr', '4.397940009'), ('lambda', ''), ('Exp. lifetime', ''), ('', ''), ('Refer', '')])
+OrderedDict([('\ufeffStructure', '676'), ('HOMO', '-0.203742784'), ('LUMO', '-0.061455311'), ('dipolemoment', '7.02482474'), ('H_T1_S1', '21.35999998'), ('H_T1_S0', '54.31000005'), ('f', '-8.336122417'), ('emission_energy', '2.46248'), ('density_Pt', '14.1212824'), ('CT_S1', '0.912'), ('R_EH _S1a', '0.6847'), ('LAMBDA_S1', '5.3681'), ('R_EH _S1b', '1.4707'), ('CT_S2', '0.9012'), ('R_EH _S2a', '0.5179'), ('LAMBDA_S2', '5.2903'), ('R_EH _S2b', '2.7594'), ('CT_S3', '0.8865'), ('R_EH _S3a', '0.5436'), ('LAMBDA_S3', '5.2431'), ('R_EH _S3b', '2.7591'), ('CT_T1', '0.7251'), ('R_EH _T1a', '0.6832'), ('LAMBDA_T1', '4.1677'), ('R_EH _T1b', '1.3937'), ('CT_T2', '0.8715'), ('R_EH _T2a', '0.5389'), ('LAMBDA_T2', '4.98'), ('R_EH _T2b', '2.308'), ('CT_T3', '0.8458'), ('R_EH _T3a', '0.5328'), ('LAMBDA_T3', '4.7872'), ('R_EH _T3b', '2.4204'), ('coor_bond_type (1)', '1'), ('coor_bond_type (2)', '1'), ('coor_bond_type (3)', '2'), ('coor_bond_type (4)', '2'), ('coor_bond_length (1)', '1.977363902'), ('coor_bond_length (2)', '1.988706615'), ('coor_bond_length (3)', '2.164165197'), ('coor_bond_length (4)', '2.16981566'), ('density_coor (1)', '4.84020871'), ('density_coor (2)', '4.840415259'), ('density_coor (3)', '5.324707903'), ('density_coor (4)', '5.325367782'), ('Calc_Kr', '4.850142971'), ('Calc_lambda', ''), ('refractive index', '1.4448'), ('E_T(30)', ''), ('E_T^N', ''), ('Quantum Yield', ''), ('Exp. Kr', '4.895422546'), ('lambda', ''), ('Exp. lifetime', ''), ('', ''), ('Refer', '')])
+OrderedDict([('\ufeffStructure', '679'), ('HOMO', '-0.206935915'), ('LUMO', '-0.059928242'), ('dipolemoment', '5.91674775'), ('H_T1_S1', '231.6599999'), ('H_T1_S0', '84.61000001'), ('f', '-7.961011867'), ('emission_energy', '2.50986'), ('density_Pt', '14.12128426'), ('CT_S1', '0.8186'), ('R_EH _S1a', '0.6567'), ('LAMBDA_S1', '4.0138'), ('R_EH _S1b', '0.9148'), ('CT_S2', '0.8526'), ('R_EH _S2a', '0.5865'), ('LAMBDA_S2', '4.4715'), ('R_EH _S2b', '2.1151'), ('CT_S3', '0.8278'), ('R_EH _S3a', '0.3164'), ('LAMBDA_S3', '3.4408'), ('R_EH _S3b', '1.215'), ('CT_T1', '0.7056'), ('R_EH _T1a', '0.6575'), ('LAMBDA_T1', '3.4632'), ('R_EH _T1b', '1.045'), ('CT_T2', '0.7387'), ('R_EH _T2a', '0.5907'), ('LAMBDA_T2', '3.8694'), ('R_EH _T2b', '2.0482'), ('CT_T3', '0.7364'), ('R_EH _T3a', '0.6307'), ('LAMBDA_T3', '3.8055'), ('R_EH _T3b', '1.3018'), ('coor_bond_type (1)', '1'), ('coor_bond_type (2)', '1'), ('coor_bond_type (3)', '2'), ('coor_bond_type (4)', '2'), ('coor_bond_length (1)', '1.953355574'), ('coor_bond_length (2)', '1.99933639'), ('coor_bond_length (3)', '2.124199614'), ('coor_bond_length (4)', '2.133304948'), ('density_coor (1)', '4.840706706'), ('density_coor (2)', '4.840627292'), ('density_coor (3)', '5.325633169'), ('density_coor (4)', '5.325378489'), ('Calc_Kr', '5.167959279'), ('Calc_lambda', ''), ('refractive index', '1.4969'), ('E_T(30)', ''), ('E_T^N', ''), ('Quantum Yield', ''), ('Exp. Kr', '5.195899652'), ('lambda', ''), ('Exp. lifetime', ''), ('', ''), ('Refer', '')])
+OrderedDict([('\ufeffStructure', '680'), ('HOMO', '-0.20627803'), ('LUMO', '-0.057291527'), ('dipolemoment', '5.54646226'), ('H_T1_S1', '214.4200001'), ('H_T1_S0', '69.90999996'), ('f', '-8.361472317'), ('emission_energy', '2.5417'), ('density_Pt', '14.12128333'), ('CT_S1', '0.8273'), ('R_EH _S1a', '0.6706'), ('LAMBDA_S1', '3.962'), ('R_EH _S1b', '0.8751'), ('CT_S2', '0.8789'), ('R_EH _S2a', '0.5289'), ('LAMBDA_S2', '4.5627'), ('R_EH _S2b', '2.4729'), ('CT_S3', '0.8578'), ('R_EH _S3a', '0.4689'), ('LAMBDA_S3', '3.6317'), ('R_EH _S3b', '1.5117'), ('CT_T1', '0.7042'), ('R_EH _T1a', '0.68'), ('LAMBDA_T1', '3.4285'), ('R_EH _T1b', '0.9782'), ('CT_T2', '0.747'), ('R_EH _T2a', '0.535'), ('LAMBDA_T2', '3.8131'), ('R_EH _T2b', '2.1882'), ('CT_T3', '0.7486'), ('R_EH _T3a', '0.6036'), ('LAMBDA_T3', '3.8128'), ('R_EH _T3b', '1.1235'), ('coor_bond_type (1)', '1'), ('coor_bond_type (2)', '1'), ('coor_bond_type (3)', '2'), ('coor_bond_type (4)', '2'), ('coor_bond_length (1)', '1.954332623'), ('coor_bond_length (2)', '2.003297532'), ('coor_bond_length (3)', '2.168669177'), ('coor_bond_length (4)', '2.178582108'), ('density_coor (1)', '4.840736099'), ('density_coor (2)', '4.840610226'), ('density_coor (3)', '5.325662799'), ('density_coor (4)', '5.325423114'), ('Calc_Kr', '5.039270567'), ('Calc_lambda', ''), ('refractive index', '1.4969'), ('E_T(30)', ''), ('E_T^N', ''), ('Quantum Yield', ''), ('Exp. Kr', '5.11058971'), ('lambda', ''), ('Exp. lifetime', ''), ('', ''), ('Refer', '')])
+OrderedDict([('\ufeffStructure', '681'), ('HOMO', '-0.200270665'), ('LUMO', '-0.078422826'), ('dipolemoment', '12.49863889'), ('H_T1_S1', '71.42999999'), ('H_T1_S0', '429.9700001'), ('f', '-7.03866155'), ('emission_energy', '2.44679'), ('density_Pt', '14.12128198'), ('CT_S1', '0.9634'), ('R_EH _S1a', '0.3072'), ('LAMBDA_S1', '5.5295'), ('R_EH _S1b', '4.1033'), ('CT_S2', '0.9358'), ('R_EH _S2a', '0.3728'), ('LAMBDA_S2', '5.1797'), ('R_EH _S2b', '3.6428'), ('CT_S3', '0.9749'), ('R_EH _S3a', '0.3208'), ('LAMBDA_S3', '5.9324'), ('R_EH _S3b', '4.5151'), ('CT_T1', '0.929'), ('R_EH _T1a', '0.315'), ('LAMBDA_T1', '5.2585'), ('R_EH _T1b', '4.0298'), ('CT_T2', '0.8816'), ('R_EH _T2a', '0.3792'), ('LAMBDA_T2', '4.8537'), ('R_EH _T2b', '3.5775'), ('CT_T3', '0.7823'), ('R_EH _T3a', '0.5372'), ('LAMBDA_T3', '4.8261'), ('R_EH _T3b', '2.4936'), ('coor_bond_type (1)', '1'), ('coor_bond_type (2)', '1'), ('coor_bond_type (3)', '2'), ('coor_bond_type (4)', '2'), ('coor_bond_length (1)', '1.984313987'), ('coor_bond_length (2)', '2.00091729'), ('coor_bond_length (3)', '2.155646771'), ('coor_bond_length (4)', '2.190459997'), ('density_coor (1)', '4.840192108'), ('density_coor (2)', '4.840218671'), ('density_coor (3)', '5.325379754'), ('density_coor (4)', '5.324818245'), ('Calc_Kr', '5.622412858'), ('Calc_lambda', ''), ('refractive index', '1.4448'), ('E_T(30)', ''), ('E_T^N', ''), ('Quantum Yield', ''), ('Exp. Kr', '5.311753861'), ('lambda', ''), ('Exp. lifetime', ''), ('', ''), ('Refer', '')])
+OrderedDict([('\ufeffStructure', '682'), ('HOMO', '-0.199218712'), ('LUMO', '-0.079848594'), ('dipolemoment', '15.34795602'), ('H_T1_S1', '195.27'), ('H_T1_S0', '417.5299996'), ('f', '-7.189190239'), ('emission_energy', '2.3484'), ('density_Pt', '14.12128103'), ('CT_S1', '0.9577'), ('R_EH _S1a', '0.3315'), ('LAMBDA_S1', '5.7253'), ('R_EH _S1b', '4.3396'), ('CT_S2', '0.9078'), ('R_EH _S2a', '0.4141'), ('LAMBDA_S2', '4.9919'), ('R_EH _S2b', '3.6319'), ('CT_S3', '0.9343'), ('R_EH _S3a', '0.4241'), ('LAMBDA_S3', '5.6482'), ('R_EH _S3b', '3.1697'), ('CT_T1', '0.9093'), ('R_EH _T1a', '0.3406'), ('LAMBDA_T1', '5.3821'), ('R_EH _T1b', '4.2328'), ('CT_T2', '0.8391'), ('R_EH _T2a', '0.417'), ('LAMBDA_T2', '4.4739'), ('R_EH _T2b', '3.5772'), ('CT_T3', '0.7927'), ('R_EH _T3a', '0.4932'), ('LAMBDA_T3', '4.7678'), ('R_EH _T3b', '2.5276'), ('coor_bond_type (1)', '1'), ('coor_bond_type (2)', '1'), ('coor_bond_type (3)', '2'), ('coor_bond_type (4)', '2'), ('coor_bond_length (1)', '1.995230563'), ('coor_bond_length (2)', '2.004834407'), ('coor_bond_length (3)', '2.136769758'), ('coor_bond_length (4)', '2.194282799'), ('density_coor (1)', '4.840266813'), ('density_coor (2)', '4.840156612'), ('density_coor (3)', '5.325055738'), ('density_coor (4)', '5.324787229'), ('Calc_Kr', '5.590910398'), ('Calc_lambda', ''), ('refractive index', '1.4448'), ('E_T(30)', ''), ('E_T^N', ''), ('Quantum Yield', ''), ('Exp. Kr', '5.222716471'), ('lambda', ''), ('Exp. lifetime', ''), ('', ''), ('Refer', '')])
+num of available PDB files: 24
+The shape of value for key 'x_embedding1.weight' is: torch.Size([119, 600])
+The shape of value for key 'x_embedding2.weight' is: torch.Size([3, 600])
+The shape of value for key 'gnns.0.weight' is: torch.Size([600, 600])
+The shape of value for key 'gnns.0.bias' is: torch.Size([600])
+The shape of value for key 'gnns.0.edge_embedding1.weight' is: torch.Size([6, 1])
+The shape of value for key 'gnns.0.edge_embedding2.weight' is: torch.Size([3, 1])
+The shape of value for key 'gnns.1.weight' is: torch.Size([600, 600])
+The shape of value for key 'gnns.1.bias' is: torch.Size([600])
+The shape of value for key 'gnns.1.edge_embedding1.weight' is: torch.Size([6, 1])
+The shape of value for key 'gnns.1.edge_embedding2.weight' is: torch.Size([3, 1])
+The shape of value for key 'gnns.2.weight' is: torch.Size([600, 600])
+The shape of value for key 'gnns.2.bias' is: torch.Size([600])
+The shape of value for key 'gnns.2.edge_embedding1.weight' is: torch.Size([6, 1])
+The shape of value for key 'gnns.2.edge_embedding2.weight' is: torch.Size([3, 1])
+The shape of value for key 'gnns.3.weight' is: torch.Size([600, 600])
+The shape of value for key 'gnns.3.bias' is: torch.Size([600])
+The shape of value for key 'gnns.3.edge_embedding1.weight' is: torch.Size([6, 1])
+The shape of value for key 'gnns.3.edge_embedding2.weight' is: torch.Size([3, 1])
+The shape of value for key 'gnns.4.weight' is: torch.Size([600, 600])
+The shape of value for key 'gnns.4.bias' is: torch.Size([600])
+The shape of value for key 'gnns.4.edge_embedding1.weight' is: torch.Size([6, 1])
+The shape of value for key 'gnns.4.edge_embedding2.weight' is: torch.Size([3, 1])
+The shape of value for key 'batch_norms.0.weight' is: torch.Size([600])
+The shape of value for key 'batch_norms.0.bias' is: torch.Size([600])
+The shape of value for key 'batch_norms.0.running_mean' is: torch.Size([600])
+The shape of value for key 'batch_norms.0.running_var' is: torch.Size([600])
+The shape of value for key 'batch_norms.0.num_batches_tracked' is: torch.Size([])
+The shape of value for key 'batch_norms.1.weight' is: torch.Size([600])
+The shape of value for key 'batch_norms.1.bias' is: torch.Size([600])
+The shape of value for key 'batch_norms.1.running_mean' is: torch.Size([600])
+The shape of value for key 'batch_norms.1.running_var' is: torch.Size([600])
+The shape of value for key 'batch_norms.1.num_batches_tracked' is: torch.Size([])
+The shape of value for key 'batch_norms.2.weight' is: torch.Size([600])
+The shape of value for key 'batch_norms.2.bias' is: torch.Size([600])
+The shape of value for key 'batch_norms.2.running_mean' is: torch.Size([600])
+The shape of value for key 'batch_norms.2.running_var' is: torch.Size([600])
+The shape of value for key 'batch_norms.2.num_batches_tracked' is: torch.Size([])
+The shape of value for key 'batch_norms.3.weight' is: torch.Size([600])
+The shape of value for key 'batch_norms.3.bias' is: torch.Size([600])
+The shape of value for key 'batch_norms.3.running_mean' is: torch.Size([600])
+The shape of value for key 'batch_norms.3.running_var' is: torch.Size([600])
+The shape of value for key 'batch_norms.3.num_batches_tracked' is: torch.Size([])
+The shape of value for key 'batch_norms.4.weight' is: torch.Size([600])
+The shape of value for key 'batch_norms.4.bias' is: torch.Size([600])
+The shape of value for key 'batch_norms.4.running_mean' is: torch.Size([600])
+The shape of value for key 'batch_norms.4.running_var' is: torch.Size([600])
+The shape of value for key 'batch_norms.4.num_batches_tracked' is: torch.Size([])
+The shape of value for key 'feat_lin.weight' is: torch.Size([512, 600])
+The shape of value for key 'feat_lin.bias' is: torch.Size([512])
+The shape of value for key 'out_lin.0.weight' is: torch.Size([512, 512])
+The shape of value for key 'out_lin.0.bias' is: torch.Size([512])
+The shape of value for key 'out_lin.2.weight' is: torch.Size([256, 512])
+The shape of value for key 'out_lin.2.bias' is: torch.Size([256])
+feat_lin.weight before concat tensor([[-0.0825, -0.0471,  0.0401,  ...,  0.0540,  0.0335,  0.0022],
+        [-0.0698,  0.0236, -0.0323,  ...,  0.0108, -0.0700, -0.0015],
+        [ 0.0346,  0.0721, -0.0024,  ...,  0.0258, -0.0241, -0.0938],
+        ...,
+        [-0.0362,  0.0225,  0.0003,  ...,  0.0157, -0.0173,  0.0704],
+        [ 0.0061,  0.0812,  0.0716,  ..., -0.0560, -0.0079, -0.0449],
+        [ 0.0108,  0.0451,  0.0307,  ...,  0.0893, -0.0224, -0.0257]],
+       device='cuda:0')
+feat_lin.weight.shape torch.Size([512, 600])
+Loaded pre-trained model with success.
+pred_head.0.weight True
+pred_head.0.bias True
+pred_head.2.weight True
+pred_head.2.bias True
+[5.128706741, 5.025157337, 3.902281593, 5.105668682, 4.778146576, 5.469103119, 5.527206027, 5.351028325, 5.445773701, 5.517720061, 5.522005904, 5.710305816, 5.70295544, 5.387064365, 5.344526359, 5.441825681, 4.795273406, 0.998547167, 4.541437102, 4.850142971, 5.167959279, 5.039270567, 5.622412858, 5.590910398]
+[5.128706741, 5.025157337, 3.902281593, 5.105668682, 4.778146576, 5.469103119, 5.527206027, 5.351028325, 5.445773701, 5.517720061, 5.522005904, 5.710305816, 5.70295544, 5.387064365, 5.344526359, 5.441825681, 4.795273406, 0.998547167, 4.541437102, 4.850142971, 5.167959279, 5.039270567, 5.622412858, 5.590910398]
+[5.128706741, 5.025157337, 3.902281593, 5.105668682, 4.778146576, 5.469103119, 5.527206027, 5.351028325, 5.445773701, 5.517720061, 5.522005904, 5.710305816, 5.70295544, 5.387064365, 5.344526359, 5.441825681, 4.795273406, 0.998547167, 4.541437102, 4.850142971, 5.167959279, 5.039270567, 5.622412858, 5.590910398]
+[5.128706741, 5.025157337, 3.902281593, 5.105668682, 4.778146576, 5.469103119, 5.527206027, 5.351028325, 5.445773701, 5.517720061, 5.522005904, 5.710305816, 5.70295544, 5.387064365, 5.344526359, 5.441825681, 4.795273406, 0.998547167, 4.541437102, 4.850142971, 5.167959279, 5.039270567, 5.622412858, 5.590910398]
+[5.128706741, 5.025157337, 3.902281593, 5.105668682, 4.778146576, 5.469103119, 5.527206027, 5.351028325, 5.445773701, 5.517720061, 5.522005904, 5.710305816, 5.70295544, 5.387064365, 5.344526359, 5.441825681, 4.795273406, 0.998547167, 4.541437102, 4.850142971, 5.167959279, 5.039270567, 5.622412858, 5.590910398]
+[5.128706741, 5.025157337, 3.902281593, 5.105668682, 4.778146576, 5.469103119, 5.527206027, 5.351028325, 5.445773701, 5.517720061, 5.522005904, 5.710305816, 5.70295544, 5.387064365, 5.344526359, 5.441825681, 4.795273406, 0.998547167, 4.541437102, 4.850142971, 5.167959279, 5.039270567, 5.622412858, 5.590910398]
+[5.128706741, 5.025157337, 3.902281593, 5.105668682, 4.778146576, 5.469103119, 5.527206027, 5.351028325, 5.445773701, 5.517720061, 5.522005904, 5.710305816, 5.70295544, 5.387064365, 5.344526359, 5.441825681, 4.795273406, 0.998547167, 4.541437102, 4.850142971, 5.167959279, 5.039270567, 5.622412858, 5.590910398]
+[5.128706741, 5.025157337, 3.902281593, 5.105668682, 4.778146576, 5.469103119, 5.527206027, 5.351028325, 5.445773701, 5.517720061, 5.522005904, 5.710305816, 5.70295544, 5.387064365, 5.344526359, 5.441825681, 4.795273406, 0.998547167, 4.541437102, 4.850142971, 5.167959279, 5.039270567, 5.622412858, 5.590910398]
+[5.128706741, 5.025157337, 3.902281593, 5.105668682, 4.778146576, 5.469103119, 5.527206027, 5.351028325, 5.445773701, 5.517720061, 5.522005904, 5.710305816, 5.70295544, 5.387064365, 5.344526359, 5.441825681, 4.795273406, 0.998547167, 4.541437102, 4.850142971, 5.167959279, 5.039270567, 5.622412858, 5.590910398]
+[5.128706741, 5.025157337, 3.902281593, 5.105668682, 4.778146576, 5.469103119, 5.527206027, 5.351028325, 5.445773701, 5.517720061, 5.522005904, 5.710305816, 5.70295544, 5.387064365, 5.344526359, 5.441825681, 4.795273406, 0.998547167, 4.541437102, 4.850142971, 5.167959279, 5.039270567, 5.622412858, 5.590910398]
+[5.128706741, 5.025157337, 3.902281593, 5.105668682, 4.778146576, 5.469103119, 5.527206027, 5.351028325, 5.445773701, 5.517720061, 5.522005904, 5.710305816, 5.70295544, 5.387064365, 5.344526359, 5.441825681, 4.795273406, 0.998547167, 4.541437102, 4.850142971, 5.167959279, 5.039270567, 5.622412858, 5.590910398]
+[5.128706741, 5.025157337, 3.902281593, 5.105668682, 4.778146576, 5.469103119, 5.527206027, 5.351028325, 5.445773701, 5.517720061, 5.522005904, 5.710305816, 5.70295544, 5.387064365, 5.344526359, 5.441825681, 4.795273406, 0.998547167, 4.541437102, 4.850142971, 5.167959279, 5.039270567, 5.622412858, 5.590910398]
+[5.128706741, 5.025157337, 3.902281593, 5.105668682, 4.778146576, 5.469103119, 5.527206027, 5.351028325, 5.445773701, 5.517720061, 5.522005904, 5.710305816, 5.70295544, 5.387064365, 5.344526359, 5.441825681, 4.795273406, 0.998547167, 4.541437102, 4.850142971, 5.167959279, 5.039270567, 5.622412858, 5.590910398]
+[5.128706741, 5.025157337, 3.902281593, 5.105668682, 4.778146576, 5.469103119, 5.527206027, 5.351028325, 5.445773701, 5.517720061, 5.522005904, 5.710305816, 5.70295544, 5.387064365, 5.344526359, 5.441825681, 4.795273406, 0.998547167, 4.541437102, 4.850142971, 5.167959279, 5.039270567, 5.622412858, 5.590910398]
+[5.128706741, 5.025157337, 3.902281593, 5.105668682, 4.778146576, 5.469103119, 5.527206027, 5.351028325, 5.445773701, 5.517720061, 5.522005904, 5.710305816, 5.70295544, 5.387064365, 5.344526359, 5.441825681, 4.795273406, 0.998547167, 4.541437102, 4.850142971, 5.167959279, 5.039270567, 5.622412858, 5.590910398]
+[5.128706741, 5.025157337, 3.902281593, 5.105668682, 4.778146576, 5.469103119, 5.527206027, 5.351028325, 5.445773701, 5.517720061, 5.522005904, 5.710305816, 5.70295544, 5.387064365, 5.344526359, 5.441825681, 4.795273406, 0.998547167, 4.541437102, 4.850142971, 5.167959279, 5.039270567, 5.622412858, 5.590910398]
+[5.128706741, 5.025157337, 3.902281593, 5.105668682, 4.778146576, 5.469103119, 5.527206027, 5.351028325, 5.445773701, 5.517720061, 5.522005904, 5.710305816, 5.70295544, 5.387064365, 5.344526359, 5.441825681, 4.795273406, 0.998547167, 4.541437102, 4.850142971, 5.167959279, 5.039270567, 5.622412858, 5.590910398]
+[5.128706741, 5.025157337, 3.902281593, 5.105668682, 4.778146576, 5.469103119, 5.527206027, 5.351028325, 5.445773701, 5.517720061, 5.522005904, 5.710305816, 5.70295544, 5.387064365, 5.344526359, 5.441825681, 4.795273406, 0.998547167, 4.541437102, 4.850142971, 5.167959279, 5.039270567, 5.622412858, 5.590910398]
+[5.128706741, 5.025157337, 3.902281593, 5.105668682, 4.778146576, 5.469103119, 5.527206027, 5.351028325, 5.445773701, 5.517720061, 5.522005904, 5.710305816, 5.70295544, 5.387064365, 5.344526359, 5.441825681, 4.795273406, 0.998547167, 4.541437102, 4.850142971, 5.167959279, 5.039270567, 5.622412858, 5.590910398]
+[5.128706741, 5.025157337, 3.902281593, 5.105668682, 4.778146576, 5.469103119, 5.527206027, 5.351028325, 5.445773701, 5.517720061, 5.522005904, 5.710305816, 5.70295544, 5.387064365, 5.344526359, 5.441825681, 4.795273406, 0.998547167, 4.541437102, 4.850142971, 5.167959279, 5.039270567, 5.622412858, 5.590910398]
+[5.128706741, 5.025157337, 3.902281593, 5.105668682, 4.778146576, 5.469103119, 5.527206027, 5.351028325, 5.445773701, 5.517720061, 5.522005904, 5.710305816, 5.70295544, 5.387064365, 5.344526359, 5.441825681, 4.795273406, 0.998547167, 4.541437102, 4.850142971, 5.167959279, 5.039270567, 5.622412858, 5.590910398]
+[5.128706741, 5.025157337, 3.902281593, 5.105668682, 4.778146576, 5.469103119, 5.527206027, 5.351028325, 5.445773701, 5.517720061, 5.522005904, 5.710305816, 5.70295544, 5.387064365, 5.344526359, 5.441825681, 4.795273406, 0.998547167, 4.541437102, 4.850142971, 5.167959279, 5.039270567, 5.622412858, 5.590910398]
+[5.128706741, 5.025157337, 3.902281593, 5.105668682, 4.778146576, 5.469103119, 5.527206027, 5.351028325, 5.445773701, 5.517720061, 5.522005904, 5.710305816, 5.70295544, 5.387064365, 5.344526359, 5.441825681, 4.795273406, 0.998547167, 4.541437102, 4.850142971, 5.167959279, 5.039270567, 5.622412858, 5.590910398]
+[5.128706741, 5.025157337, 3.902281593, 5.105668682, 4.778146576, 5.469103119, 5.527206027, 5.351028325, 5.445773701, 5.517720061, 5.522005904, 5.710305816, 5.70295544, 5.387064365, 5.344526359, 5.441825681, 4.795273406, 0.998547167, 4.541437102, 4.850142971, 5.167959279, 5.039270567, 5.622412858, 5.590910398]
+h tensor([[-3.6407e-01, -2.6396e-01, -2.6532e-01,  ...,  1.3491e+00,
+          1.0633e-03, -8.7826e-02],
+        [-1.1884e-01,  7.5484e-02, -1.1549e-01,  ...,  7.7343e-01,
+          4.2573e-02,  1.1747e-02],
+        [-5.4184e-01,  1.1587e-01, -1.3634e-01,  ...,  7.8691e-01,
+          3.2852e-01, -2.1380e-01],
+        ...,
+        [ 1.3595e-01,  2.6415e-01,  1.0472e-01,  ...,  4.0247e-01,
+         -3.3136e-02,  5.7545e-02],
+        [-1.6194e-01,  9.5516e-02,  6.4114e-02,  ...,  2.1167e-01,
+         -2.2045e-03,  2.1055e-01],
+        [ 2.9843e-01,  3.7675e-01,  4.3145e-02,  ...,  7.3830e-01,
+          2.1091e-01,  1.3386e-01]], device='cuda:0')
+h.size torch.Size([24, 600])
+train/valid/test h (after feat_lin) tensor([[ 9.0711,  0.7839,  4.4706,  ..., -0.0498, -0.9282,  6.2281],
+        [ 4.4175,  0.4043,  3.4017,  ...,  0.2412,  0.3705,  2.9820],
+        [ 8.0696,  1.0931,  3.2025,  ...,  0.5791,  0.3172,  4.3341],
+        ...,
+        [ 2.2379,  0.2901,  1.9139,  ...,  0.5115,  0.9712,  3.0849],
+        [ 2.1121, -0.0673,  0.9808,  ...,  0.4313,  1.1679,  2.8814],
+        [ 1.9702,  0.4035,  1.9214,  ...,  0.2403,  0.9739,  0.8680]],
+       device='cuda:0')
+train/valid/test h size (after feat_lin) torch.Size([24, 512])
+save csv here
+index_list [['9', '7', '12', '3', '11', '5', '20', '1', '15', '16', '10', '22', '8', '2', '23', '14', '17', '18', '13', '6', '0', '19', '4', '21']]
+whole_original_df    Structure      HOMO      LUMO  ...  Exp. lifetime  Unnamed: 54  Refer
+0          5 -0.208637 -0.078965  ...            NaN          NaN    NaN
+1          9 -0.194031 -0.083214  ...            NaN          NaN    NaN
+2         36 -0.207901 -0.079789  ...            NaN          NaN    NaN
+3         55 -0.204711 -0.073981  ...            NaN          NaN    NaN
+4         56 -0.196794 -0.067328  ...            NaN          NaN    NaN
+5         67 -0.206241 -0.066867  ...            NaN          NaN    NaN
+6         68 -0.207178 -0.068215  ...            NaN          NaN    NaN
+7         70 -0.203636 -0.059859  ...            NaN          NaN    NaN
+8         72 -0.201819 -0.058372  ...            NaN          NaN    NaN
+9        3c1 -0.203734 -0.083139  ...            NaN          NaN    NaN
+10       3c2 -0.203020 -0.062937  ...            NaN          NaN    NaN
+11       3c3 -0.203428 -0.066680  ...            NaN          NaN    NaN
+12       3c4 -0.203286 -0.065685  ...            NaN          NaN    NaN
+13       666 -0.208621 -0.092458  ...            NaN          NaN    NaN
+14       667 -0.209356 -0.087797  ...            NaN          NaN    NaN
+15       668 -0.206717 -0.078601  ...            NaN          NaN    NaN
+16       671 -0.198504 -0.063657  ...            NaN          NaN    NaN
+17       672 -0.163983 -0.119035  ...            NaN          NaN    NaN
+18       674 -0.192357 -0.060544  ...            NaN          NaN    NaN
+19       676 -0.203743 -0.061455  ...            NaN          NaN    NaN
+20       679 -0.206936 -0.059928  ...            NaN          NaN    NaN
+21       680 -0.206278 -0.057292  ...            NaN          NaN    NaN
+22       681 -0.200271 -0.078423  ...            NaN          NaN    NaN
+23       682 -0.199219 -0.079849  ...            NaN          NaN    NaN
+
+[24 rows x 56 columns]
+df_QM_fea         HOMO      LUMO  ...  density_coor (3)  density_coor (4)
+0  -0.208637 -0.078965  ...          5.324685          5.744661
+1  -0.194031 -0.083214  ...          5.324639          5.744430
+2  -0.207901 -0.079789  ...          5.324636          5.744833
+3  -0.204711 -0.073981  ...          5.324799          5.324751
+4  -0.196794 -0.067328  ...          5.324828          5.324793
+5  -0.206241 -0.066867  ...          5.325427          5.324814
+6  -0.207178 -0.068215  ...          5.325443          5.324800
+7  -0.203636 -0.059859  ...          5.325367          5.324747
+8  -0.201819 -0.058372  ...          5.325281          5.324756
+9  -0.203734 -0.083139  ...          4.842040          5.325083
+10 -0.203020 -0.062937  ...          4.842069          5.324834
+11 -0.203428 -0.066680  ...          4.842063          5.324865
+12 -0.203286 -0.065685  ...          4.842048          5.324844
+13 -0.208621 -0.092458  ...          5.324889          5.324812
+14 -0.209356 -0.087797  ...          5.324873          5.324805
+15 -0.206717 -0.078601  ...          5.324663          5.324822
+16 -0.198504 -0.063657  ...          5.324902          5.324848
+17 -0.163983 -0.119035  ...          5.324645          5.324554
+18 -0.192357 -0.060544  ...          5.324961          5.324963
+19 -0.203743 -0.061455  ...          5.324708          5.325368
+20 -0.206936 -0.059928  ...          5.325633          5.325378
+21 -0.206278 -0.057292  ...          5.325663          5.325423
+22 -0.200271 -0.078423  ...          5.325380          5.324818
+23 -0.199219 -0.079849  ...          5.325056          5.324787
+
+[24 rows x 44 columns]
+df_QM_and_solvet           0         1          2       3   ...        43      44  45  46
+0  -0.208637 -0.078965   7.659624    9.34  ...  5.744661  1.4448 NaN NaN
+1  -0.194031 -0.083214   5.363366    6.23  ...  5.744430  1.4448 NaN NaN
+2  -0.207901 -0.079789   4.660229   27.98  ...  5.744833  1.4448 NaN NaN
+3  -0.204711 -0.073981  13.147856   52.46  ...  5.324751  1.4448 NaN NaN
+4  -0.196794 -0.067328  10.006050   34.34  ...  5.324793  1.4448 NaN NaN
+5  -0.206241 -0.066867  12.370702   34.68  ...  5.324814  1.4448 NaN NaN
+6  -0.207178 -0.068215  12.895196   30.04  ...  5.324800  1.4448 NaN NaN
+7  -0.203636 -0.059859   9.917906   28.70  ...  5.324747  1.4448 NaN NaN
+8  -0.201819 -0.058372  10.256909   24.08  ...  5.324756  1.4448 NaN NaN
+9  -0.203734 -0.083139  13.410205  116.36  ...  5.325083  1.4448 NaN NaN
+10 -0.203020 -0.062937  12.803475   41.46  ...  5.324834  1.4448 NaN NaN
+11 -0.203428 -0.066680  12.621592   30.34  ...  5.324865  1.4448 NaN NaN
+12 -0.203286 -0.065685  13.006761   32.40  ...  5.324844  1.4448 NaN NaN
+13 -0.208621 -0.092458   8.872589   56.03  ...  5.324812  1.4448 NaN NaN
+14 -0.209356 -0.087797   8.432184   51.49  ...  5.324805  1.4448 NaN NaN
+15 -0.206717 -0.078601   9.485931   69.55  ...  5.324822  1.4448 NaN NaN
+16 -0.198504 -0.063657  11.205027   10.49  ...  5.324848  1.4448 NaN NaN
+17 -0.163983 -0.119035   7.719443   28.14  ...  5.324554  1.4448 NaN NaN
+18 -0.192357 -0.060544  11.713889   18.38  ...  5.324963  1.4448 NaN NaN
+19 -0.203743 -0.061455   7.024825   21.36  ...  5.325368  1.4448 NaN NaN
+20 -0.206936 -0.059928   5.916748  231.66  ...  5.325378  1.4969 NaN NaN
+21 -0.206278 -0.057292   5.546462  214.42  ...  5.325423  1.4969 NaN NaN
+22 -0.200271 -0.078423  12.498639   71.43  ...  5.324818  1.4448 NaN NaN
+23 -0.199219 -0.079849  15.347956  195.27  ...  5.324787  1.4448 NaN NaN
+
+[24 rows x 47 columns]
+df_reindex           0         1          2       3   ...        43      44  45  46
+9  -0.203734 -0.083139  13.410205  116.36  ...  5.325083  1.4448 NaN NaN
+7  -0.203636 -0.059859   9.917906   28.70  ...  5.324747  1.4448 NaN NaN
+12 -0.203286 -0.065685  13.006761   32.40  ...  5.324844  1.4448 NaN NaN
+3  -0.204711 -0.073981  13.147856   52.46  ...  5.324751  1.4448 NaN NaN
+11 -0.203428 -0.066680  12.621592   30.34  ...  5.324865  1.4448 NaN NaN
+5  -0.206241 -0.066867  12.370702   34.68  ...  5.324814  1.4448 NaN NaN
+20 -0.206936 -0.059928   5.916748  231.66  ...  5.325378  1.4969 NaN NaN
+1  -0.194031 -0.083214   5.363366    6.23  ...  5.744430  1.4448 NaN NaN
+15 -0.206717 -0.078601   9.485931   69.55  ...  5.324822  1.4448 NaN NaN
+16 -0.198504 -0.063657  11.205027   10.49  ...  5.324848  1.4448 NaN NaN
+10 -0.203020 -0.062937  12.803475   41.46  ...  5.324834  1.4448 NaN NaN
+22 -0.200271 -0.078423  12.498639   71.43  ...  5.324818  1.4448 NaN NaN
+8  -0.201819 -0.058372  10.256909   24.08  ...  5.324756  1.4448 NaN NaN
+2  -0.207901 -0.079789   4.660229   27.98  ...  5.744833  1.4448 NaN NaN
+23 -0.199219 -0.079849  15.347956  195.27  ...  5.324787  1.4448 NaN NaN
+14 -0.209356 -0.087797   8.432184   51.49  ...  5.324805  1.4448 NaN NaN
+17 -0.163983 -0.119035   7.719443   28.14  ...  5.324554  1.4448 NaN NaN
+18 -0.192357 -0.060544  11.713889   18.38  ...  5.324963  1.4448 NaN NaN
+13 -0.208621 -0.092458   8.872589   56.03  ...  5.324812  1.4448 NaN NaN
+6  -0.207178 -0.068215  12.895196   30.04  ...  5.324800  1.4448 NaN NaN
+0  -0.208637 -0.078965   7.659624    9.34  ...  5.744661  1.4448 NaN NaN
+19 -0.203743 -0.061455   7.024825   21.36  ...  5.325368  1.4448 NaN NaN
+4  -0.196794 -0.067328  10.006050   34.34  ...  5.324793  1.4448 NaN NaN
+21 -0.206278 -0.057292   5.546462  214.42  ...  5.325423  1.4969 NaN NaN
+
+[24 rows x 47 columns]
+    index         0         1          2  ...        43      44  45  46
+0       9 -0.203734 -0.083139  13.410205  ...  5.325083  1.4448 NaN NaN
+1       7 -0.203636 -0.059859   9.917906  ...  5.324747  1.4448 NaN NaN
+2      12 -0.203286 -0.065685  13.006761  ...  5.324844  1.4448 NaN NaN
+3       3 -0.204711 -0.073981  13.147856  ...  5.324751  1.4448 NaN NaN
+4      11 -0.203428 -0.066680  12.621592  ...  5.324865  1.4448 NaN NaN
+5       5 -0.206241 -0.066867  12.370702  ...  5.324814  1.4448 NaN NaN
+6      20 -0.206936 -0.059928   5.916748  ...  5.325378  1.4969 NaN NaN
+7       1 -0.194031 -0.083214   5.363366  ...  5.744430  1.4448 NaN NaN
+8      15 -0.206717 -0.078601   9.485931  ...  5.324822  1.4448 NaN NaN
+9      16 -0.198504 -0.063657  11.205027  ...  5.324848  1.4448 NaN NaN
+10     10 -0.203020 -0.062937  12.803475  ...  5.324834  1.4448 NaN NaN
+11     22 -0.200271 -0.078423  12.498639  ...  5.324818  1.4448 NaN NaN
+12      8 -0.201819 -0.058372  10.256909  ...  5.324756  1.4448 NaN NaN
+13      2 -0.207901 -0.079789   4.660229  ...  5.744833  1.4448 NaN NaN
+14     23 -0.199219 -0.079849  15.347956  ...  5.324787  1.4448 NaN NaN
+15     14 -0.209356 -0.087797   8.432184  ...  5.324805  1.4448 NaN NaN
+16     17 -0.163983 -0.119035   7.719443  ...  5.324554  1.4448 NaN NaN
+17     18 -0.192357 -0.060544  11.713889  ...  5.324963  1.4448 NaN NaN
+18     13 -0.208621 -0.092458   8.872589  ...  5.324812  1.4448 NaN NaN
+19      6 -0.207178 -0.068215  12.895196  ...  5.324800  1.4448 NaN NaN
+20      0 -0.208637 -0.078965   7.659624  ...  5.744661  1.4448 NaN NaN
+21     19 -0.203743 -0.061455   7.024825  ...  5.325368  1.4448 NaN NaN
+22      4 -0.196794 -0.067328  10.006050  ...  5.324793  1.4448 NaN NaN
+23     21 -0.206278 -0.057292   5.546462  ...  5.325423  1.4969 NaN NaN
+
+[24 rows x 48 columns]
+df_final_with_QM          0         1         2         3    ...       557     558  559  560
+0   9.071064  0.783874  4.470637 -0.514106  ...  5.325083  1.4448  NaN  NaN
+1   4.417528  0.404347  3.401717 -2.171378  ...  5.324747  1.4448  NaN  NaN
+2   8.069600  1.093101  3.202523 -0.950111  ...  5.324844  1.4448  NaN  NaN
+3   5.834368  0.275771  1.861898 -1.426106  ...  5.324751  1.4448  NaN  NaN
+4   9.191580  0.755304  3.342475 -0.860232  ...  5.324865  1.4448  NaN  NaN
+5   6.477869  0.246620  3.331931 -3.154824  ...  5.324814  1.4448  NaN  NaN
+6   1.502380  0.293017  1.454600 -3.188397  ...  5.325378  1.4969  NaN  NaN
+7   4.928586 -1.445094  1.835204 -1.270270  ...  5.744430  1.4448  NaN  NaN
+8   8.036403  0.829421  3.473190 -2.443521  ...  5.324822  1.4448  NaN  NaN
+9   5.014169 -0.495141  1.335964 -1.603564  ...  5.324848  1.4448  NaN  NaN
+10  9.572554  1.005892  3.476527 -1.018205  ...  5.324834  1.4448  NaN  NaN
+11  7.747090  0.605109  3.785551 -1.791764  ...  5.324818  1.4448  NaN  NaN
+12  3.787452  0.571621  3.340492 -0.895978  ...  5.324756  1.4448  NaN  NaN
+13  2.778207 -0.775272  1.691143 -1.325479  ...  5.744833  1.4448  NaN  NaN
+14  6.138010  0.297892  3.987195 -1.271842  ...  5.324787  1.4448  NaN  NaN
+15  6.884368  1.154082  3.315914 -2.365625  ...  5.324805  1.4448  NaN  NaN
+16  2.969292  0.085810  1.323060  1.004449  ...  5.324554  1.4448  NaN  NaN
+17  5.686399 -1.111265  1.406856 -1.561928  ...  5.324963  1.4448  NaN  NaN
+18  8.537186  0.929750  3.366601 -2.286990  ...  5.324812  1.4448  NaN  NaN
+19  4.049596  0.437887  2.926852 -0.336437  ...  5.324800  1.4448  NaN  NaN
+20  2.607142 -0.029486  1.625066 -1.834818  ...  5.744661  1.4448  NaN  NaN
+21  2.237913  0.290123  1.913907 -1.908887  ...  5.325368  1.4448  NaN  NaN
+22  2.112076 -0.067343  0.980767  0.366796  ...  5.324793  1.4448  NaN  NaN
+23  1.970225  0.403476  1.921440 -3.331300  ...  5.325423  1.4969  NaN  NaN
+
+[24 rows x 561 columns]
+0 0 24.34758758544922
+print in the revised function like train_actully_eval

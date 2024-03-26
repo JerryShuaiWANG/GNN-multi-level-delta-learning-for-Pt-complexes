@@ -1,0 +1,1 @@
+# this is a real ckpt file for GCN 256 features (as an example)

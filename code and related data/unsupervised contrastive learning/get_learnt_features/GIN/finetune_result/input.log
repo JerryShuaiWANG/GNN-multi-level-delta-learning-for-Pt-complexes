@@ -1,0 +1,224 @@
+Please install apex for mixed precision training from: https://github.com/NVIDIA/apex
+{'batch_size': 469, 'epochs': 100, 'eval_every_n_epochs': 1, 'fine_tune_from': '600-512-Sep06_16-08-42', 'log_every_n_steps': 50, 'fp16_precision': False, 'init_lr': 0.0005, 'init_base_lr': 0.0001, 'weight_decay': '1e-6', 'gpu': 'cuda:0', 'task_name': 'PDB', 'model_type': 'gin', 'model': {'num_layer': 5, 'emb_dim': 600, 'feat_dim': 512, 'drop_ratio': 0, 'pool': 'mean'}, 'dataset': {'num_workers': 0, 'valid_size': 0, 'test_size': 0, 'splitting': 'random', 'task': 'regression', 'data_path': './data/pdb/external_test_with_structure_name_and_QM_used.csv'}, 'aug': 'subgraph'}
+Running on: cuda:0
+num of available PDB files: 24
+The shape of value for key 'x_embedding1.weight' is: torch.Size([119, 600])
+The shape of value for key 'x_embedding2.weight' is: torch.Size([3, 600])
+The shape of value for key 'gnns.0.mlp.0.weight' is: torch.Size([1200, 600])
+The shape of value for key 'gnns.0.mlp.0.bias' is: torch.Size([1200])
+The shape of value for key 'gnns.0.mlp.2.weight' is: torch.Size([600, 1200])
+The shape of value for key 'gnns.0.mlp.2.bias' is: torch.Size([600])
+The shape of value for key 'gnns.0.edge_embedding1.weight' is: torch.Size([6, 600])
+The shape of value for key 'gnns.0.edge_embedding2.weight' is: torch.Size([3, 600])
+The shape of value for key 'gnns.1.mlp.0.weight' is: torch.Size([1200, 600])
+The shape of value for key 'gnns.1.mlp.0.bias' is: torch.Size([1200])
+The shape of value for key 'gnns.1.mlp.2.weight' is: torch.Size([600, 1200])
+The shape of value for key 'gnns.1.mlp.2.bias' is: torch.Size([600])
+The shape of value for key 'gnns.1.edge_embedding1.weight' is: torch.Size([6, 600])
+The shape of value for key 'gnns.1.edge_embedding2.weight' is: torch.Size([3, 600])
+The shape of value for key 'gnns.2.mlp.0.weight' is: torch.Size([1200, 600])
+The shape of value for key 'gnns.2.mlp.0.bias' is: torch.Size([1200])
+The shape of value for key 'gnns.2.mlp.2.weight' is: torch.Size([600, 1200])
+The shape of value for key 'gnns.2.mlp.2.bias' is: torch.Size([600])
+The shape of value for key 'gnns.2.edge_embedding1.weight' is: torch.Size([6, 600])
+The shape of value for key 'gnns.2.edge_embedding2.weight' is: torch.Size([3, 600])
+The shape of value for key 'gnns.3.mlp.0.weight' is: torch.Size([1200, 600])
+The shape of value for key 'gnns.3.mlp.0.bias' is: torch.Size([1200])
+The shape of value for key 'gnns.3.mlp.2.weight' is: torch.Size([600, 1200])
+The shape of value for key 'gnns.3.mlp.2.bias' is: torch.Size([600])
+The shape of value for key 'gnns.3.edge_embedding1.weight' is: torch.Size([6, 600])
+The shape of value for key 'gnns.3.edge_embedding2.weight' is: torch.Size([3, 600])
+The shape of value for key 'gnns.4.mlp.0.weight' is: torch.Size([1200, 600])
+The shape of value for key 'gnns.4.mlp.0.bias' is: torch.Size([1200])
+The shape of value for key 'gnns.4.mlp.2.weight' is: torch.Size([600, 1200])
+The shape of value for key 'gnns.4.mlp.2.bias' is: torch.Size([600])
+The shape of value for key 'gnns.4.edge_embedding1.weight' is: torch.Size([6, 600])
+The shape of value for key 'gnns.4.edge_embedding2.weight' is: torch.Size([3, 600])
+The shape of value for key 'batch_norms.0.weight' is: torch.Size([600])
+The shape of value for key 'batch_norms.0.bias' is: torch.Size([600])
+The shape of value for key 'batch_norms.0.running_mean' is: torch.Size([600])
+The shape of value for key 'batch_norms.0.running_var' is: torch.Size([600])
+The shape of value for key 'batch_norms.0.num_batches_tracked' is: torch.Size([])
+The shape of value for key 'batch_norms.1.weight' is: torch.Size([600])
+The shape of value for key 'batch_norms.1.bias' is: torch.Size([600])
+The shape of value for key 'batch_norms.1.running_mean' is: torch.Size([600])
+The shape of value for key 'batch_norms.1.running_var' is: torch.Size([600])
+The shape of value for key 'batch_norms.1.num_batches_tracked' is: torch.Size([])
+The shape of value for key 'batch_norms.2.weight' is: torch.Size([600])
+The shape of value for key 'batch_norms.2.bias' is: torch.Size([600])
+The shape of value for key 'batch_norms.2.running_mean' is: torch.Size([600])
+The shape of value for key 'batch_norms.2.running_var' is: torch.Size([600])
+The shape of value for key 'batch_norms.2.num_batches_tracked' is: torch.Size([])
+The shape of value for key 'batch_norms.3.weight' is: torch.Size([600])
+The shape of value for key 'batch_norms.3.bias' is: torch.Size([600])
+The shape of value for key 'batch_norms.3.running_mean' is: torch.Size([600])
+The shape of value for key 'batch_norms.3.running_var' is: torch.Size([600])
+The shape of value for key 'batch_norms.3.num_batches_tracked' is: torch.Size([])
+The shape of value for key 'batch_norms.4.weight' is: torch.Size([600])
+The shape of value for key 'batch_norms.4.bias' is: torch.Size([600])
+The shape of value for key 'batch_norms.4.running_mean' is: torch.Size([600])
+The shape of value for key 'batch_norms.4.running_var' is: torch.Size([600])
+The shape of value for key 'batch_norms.4.num_batches_tracked' is: torch.Size([])
+The shape of value for key 'feat_lin.weight' is: torch.Size([512, 600])
+The shape of value for key 'feat_lin.bias' is: torch.Size([512])
+The shape of value for key 'out_lin.0.weight' is: torch.Size([512, 512])
+The shape of value for key 'out_lin.0.bias' is: torch.Size([512])
+The shape of value for key 'out_lin.2.weight' is: torch.Size([256, 512])
+The shape of value for key 'out_lin.2.bias' is: torch.Size([256])
+feat_lin.weight.shape torch.Size([512, 600])
+Loaded pre-trained model with success.
+pred_head.0.weight True
+pred_head.0.bias True
+pred_head.2.weight True
+pred_head.2.bias True
+pred_head.4.weight True
+pred_head.4.bias True
+after pool, the second last layer torch.Size([24, 600])
+train/valid/test h (after feat_lin) tensor([[ 5.2877,  1.6510,  1.0575,  ...,  0.2281, -3.1024, -7.8717],
+        [ 4.8535,  1.5147,  0.6040,  ...,  0.0262, -2.7711, -7.5385],
+        [ 5.1339,  1.6548,  0.7474,  ...,  0.1132, -3.3191, -7.5941],
+        ...,
+        [ 5.4226,  1.8587,  1.4686,  ...,  0.3502, -3.2419, -8.2053],
+        [ 5.0114,  1.8583,  0.2576,  ...,  0.2161, -2.5436, -7.8780],
+        [ 5.4514,  1.7957,  1.4123,  ...,  0.3255, -3.2807, -8.2164]],
+       device='cuda:0')
+train/valid/test h size (after feat_lin) torch.Size([24, 512])
+save csv here
+index_list [['7', '2', '21', '19', '11', '18', '22', '1', '4', '0', '15', '23', '8', '9', '10', '3', '12', '5', '16', '6', '20', '13', '17', '14']]
+whole_original_df    Structure      HOMO      LUMO  ...  Exp. lifetime  Unnamed: 54  Refer
+0          5 -0.208637 -0.078965  ...            NaN          NaN    NaN
+1          9 -0.194031 -0.083214  ...            NaN          NaN    NaN
+2         36 -0.207901 -0.079789  ...            NaN          NaN    NaN
+3         55 -0.204711 -0.073981  ...            NaN          NaN    NaN
+4         56 -0.196794 -0.067328  ...            NaN          NaN    NaN
+5         67 -0.206241 -0.066867  ...            NaN          NaN    NaN
+6         68 -0.207178 -0.068215  ...            NaN          NaN    NaN
+7         70 -0.203636 -0.059859  ...            NaN          NaN    NaN
+8         72 -0.201819 -0.058372  ...            NaN          NaN    NaN
+9        3c1 -0.203734 -0.083139  ...            NaN          NaN    NaN
+10       3c2 -0.203020 -0.062937  ...            NaN          NaN    NaN
+11       3c3 -0.203428 -0.066680  ...            NaN          NaN    NaN
+12       3c4 -0.203286 -0.065685  ...            NaN          NaN    NaN
+13       666 -0.208621 -0.092458  ...            NaN          NaN    NaN
+14       667 -0.209356 -0.087797  ...            NaN          NaN    NaN
+15       668 -0.206717 -0.078601  ...            NaN          NaN    NaN
+16       671 -0.198504 -0.063657  ...            NaN          NaN    NaN
+17       672 -0.163983 -0.119035  ...            NaN          NaN    NaN
+18       674 -0.192357 -0.060544  ...            NaN          NaN    NaN
+19       676 -0.203743 -0.061455  ...            NaN          NaN    NaN
+20       679 -0.206936 -0.059928  ...            NaN          NaN    NaN
+21       680 -0.206278 -0.057292  ...            NaN          NaN    NaN
+22       681 -0.200271 -0.078423  ...            NaN          NaN    NaN
+23       682 -0.199219 -0.079849  ...            NaN          NaN    NaN
+
+[24 rows x 56 columns]
+df_QM_fea         HOMO      LUMO  ...  density_coor (3)  density_coor (4)
+0  -0.208637 -0.078965  ...          5.324685          5.744661
+1  -0.194031 -0.083214  ...          5.324639          5.744430
+2  -0.207901 -0.079789  ...          5.324636          5.744833
+3  -0.204711 -0.073981  ...          5.324799          5.324751
+4  -0.196794 -0.067328  ...          5.324828          5.324793
+5  -0.206241 -0.066867  ...          5.325427          5.324814
+6  -0.207178 -0.068215  ...          5.325443          5.324800
+7  -0.203636 -0.059859  ...          5.325367          5.324747
+8  -0.201819 -0.058372  ...          5.325281          5.324756
+9  -0.203734 -0.083139  ...          4.842040          5.325083
+10 -0.203020 -0.062937  ...          4.842069          5.324834
+11 -0.203428 -0.066680  ...          4.842063          5.324865
+12 -0.203286 -0.065685  ...          4.842048          5.324844
+13 -0.208621 -0.092458  ...          5.324889          5.324812
+14 -0.209356 -0.087797  ...          5.324873          5.324805
+15 -0.206717 -0.078601  ...          5.324663          5.324822
+16 -0.198504 -0.063657  ...          5.324902          5.324848
+17 -0.163983 -0.119035  ...          5.324645          5.324554
+18 -0.192357 -0.060544  ...          5.324961          5.324963
+19 -0.203743 -0.061455  ...          5.324708          5.325368
+20 -0.206936 -0.059928  ...          5.325633          5.325378
+21 -0.206278 -0.057292  ...          5.325663          5.325423
+22 -0.200271 -0.078423  ...          5.325380          5.324818
+23 -0.199219 -0.079849  ...          5.325056          5.324787
+
+[24 rows x 44 columns]
+df_reindex           0         1          2       3   ...        43      44  45  46
+7  -0.203636 -0.059859   9.917906   28.70  ...  5.324747  1.4448 NaN NaN
+2  -0.207901 -0.079789   4.660229   27.98  ...  5.744833  1.4448 NaN NaN
+21 -0.206278 -0.057292   5.546462  214.42  ...  5.325423  1.4969 NaN NaN
+19 -0.203743 -0.061455   7.024825   21.36  ...  5.325368  1.4448 NaN NaN
+11 -0.203428 -0.066680  12.621592   30.34  ...  5.324865  1.4448 NaN NaN
+18 -0.192357 -0.060544  11.713889   18.38  ...  5.324963  1.4448 NaN NaN
+22 -0.200271 -0.078423  12.498639   71.43  ...  5.324818  1.4448 NaN NaN
+1  -0.194031 -0.083214   5.363366    6.23  ...  5.744430  1.4448 NaN NaN
+4  -0.196794 -0.067328  10.006050   34.34  ...  5.324793  1.4448 NaN NaN
+0  -0.208637 -0.078965   7.659624    9.34  ...  5.744661  1.4448 NaN NaN
+15 -0.206717 -0.078601   9.485931   69.55  ...  5.324822  1.4448 NaN NaN
+23 -0.199219 -0.079849  15.347956  195.27  ...  5.324787  1.4448 NaN NaN
+8  -0.201819 -0.058372  10.256909   24.08  ...  5.324756  1.4448 NaN NaN
+9  -0.203734 -0.083139  13.410205  116.36  ...  5.325083  1.4448 NaN NaN
+10 -0.203020 -0.062937  12.803475   41.46  ...  5.324834  1.4448 NaN NaN
+3  -0.204711 -0.073981  13.147856   52.46  ...  5.324751  1.4448 NaN NaN
+12 -0.203286 -0.065685  13.006761   32.40  ...  5.324844  1.4448 NaN NaN
+5  -0.206241 -0.066867  12.370702   34.68  ...  5.324814  1.4448 NaN NaN
+16 -0.198504 -0.063657  11.205027   10.49  ...  5.324848  1.4448 NaN NaN
+6  -0.207178 -0.068215  12.895196   30.04  ...  5.324800  1.4448 NaN NaN
+20 -0.206936 -0.059928   5.916748  231.66  ...  5.325378  1.4969 NaN NaN
+13 -0.208621 -0.092458   8.872589   56.03  ...  5.324812  1.4448 NaN NaN
+17 -0.163983 -0.119035   7.719443   28.14  ...  5.324554  1.4448 NaN NaN
+14 -0.209356 -0.087797   8.432184   51.49  ...  5.324805  1.4448 NaN NaN
+
+[24 rows x 47 columns]
+    index         0         1          2  ...        43      44  45  46
+0       7 -0.203636 -0.059859   9.917906  ...  5.324747  1.4448 NaN NaN
+1       2 -0.207901 -0.079789   4.660229  ...  5.744833  1.4448 NaN NaN
+2      21 -0.206278 -0.057292   5.546462  ...  5.325423  1.4969 NaN NaN
+3      19 -0.203743 -0.061455   7.024825  ...  5.325368  1.4448 NaN NaN
+4      11 -0.203428 -0.066680  12.621592  ...  5.324865  1.4448 NaN NaN
+5      18 -0.192357 -0.060544  11.713889  ...  5.324963  1.4448 NaN NaN
+6      22 -0.200271 -0.078423  12.498639  ...  5.324818  1.4448 NaN NaN
+7       1 -0.194031 -0.083214   5.363366  ...  5.744430  1.4448 NaN NaN
+8       4 -0.196794 -0.067328  10.006050  ...  5.324793  1.4448 NaN NaN
+9       0 -0.208637 -0.078965   7.659624  ...  5.744661  1.4448 NaN NaN
+10     15 -0.206717 -0.078601   9.485931  ...  5.324822  1.4448 NaN NaN
+11     23 -0.199219 -0.079849  15.347956  ...  5.324787  1.4448 NaN NaN
+12      8 -0.201819 -0.058372  10.256909  ...  5.324756  1.4448 NaN NaN
+13      9 -0.203734 -0.083139  13.410205  ...  5.325083  1.4448 NaN NaN
+14     10 -0.203020 -0.062937  12.803475  ...  5.324834  1.4448 NaN NaN
+15      3 -0.204711 -0.073981  13.147856  ...  5.324751  1.4448 NaN NaN
+16     12 -0.203286 -0.065685  13.006761  ...  5.324844  1.4448 NaN NaN
+17      5 -0.206241 -0.066867  12.370702  ...  5.324814  1.4448 NaN NaN
+18     16 -0.198504 -0.063657  11.205027  ...  5.324848  1.4448 NaN NaN
+19      6 -0.207178 -0.068215  12.895196  ...  5.324800  1.4448 NaN NaN
+20     20 -0.206936 -0.059928   5.916748  ...  5.325378  1.4969 NaN NaN
+21     13 -0.208621 -0.092458   8.872589  ...  5.324812  1.4448 NaN NaN
+22     17 -0.163983 -0.119035   7.719443  ...  5.324554  1.4448 NaN NaN
+23     14 -0.209356 -0.087797   8.432184  ...  5.324805  1.4448 NaN NaN
+
+[24 rows x 48 columns]
+df_final_with_QM          0         1         2         3    ...       557     558  559  560
+0   5.287661  1.650963  1.057544 -3.959089  ...  5.324747  1.4448  NaN  NaN
+1   4.853521  1.514699  0.604002 -3.665325  ...  5.744833  1.4448  NaN  NaN
+2   5.133873  1.654807  0.747378 -3.803190  ...  5.325423  1.4969  NaN  NaN
+3   5.434186  1.566326  0.918665 -3.909497  ...  5.325368  1.4448  NaN  NaN
+4   5.168848  1.963682  1.167429 -3.797311  ...  5.324865  1.4448  NaN  NaN
+5   5.195497  1.244069  0.920157 -4.127606  ...  5.324963  1.4448  NaN  NaN
+6   5.550079  1.707550  1.591633 -3.780571  ...  5.324818  1.4448  NaN  NaN
+7   5.371891  1.507592  0.498979 -4.059664  ...  5.744430  1.4448  NaN  NaN
+8   4.952730  1.968967  0.507929 -3.712008  ...  5.324793  1.4448  NaN  NaN
+9   5.334181  1.621633  0.572422 -3.955076  ...  5.744661  1.4448  NaN  NaN
+10  5.398096  2.044222  1.516224 -3.742074  ...  5.324822  1.4448  NaN  NaN
+11  5.293117  1.684451  1.366930 -3.878760  ...  5.324787  1.4448  NaN  NaN
+12  5.044896  1.964429  0.767159 -3.614059  ...  5.324756  1.4448  NaN  NaN
+13  5.134234  2.521922  1.444268 -3.918347  ...  5.325083  1.4448  NaN  NaN
+14  5.290082  1.939173  1.365695 -3.848792  ...  5.324834  1.4448  NaN  NaN
+15  5.072690  1.561201  0.901141 -4.159913  ...  5.324751  1.4448  NaN  NaN
+16  5.187164  1.945481  1.138897 -3.916702  ...  5.324844  1.4448  NaN  NaN
+17  5.413883  1.469895  1.153529 -4.037753  ...  5.324814  1.4448  NaN  NaN
+18  5.322497  1.534850  1.086893 -3.988563  ...  5.324848  1.4448  NaN  NaN
+19  5.290488  1.975037  0.886693 -4.648351  ...  5.324800  1.4448  NaN  NaN
+20  4.956975  1.723002  0.754768 -3.535442  ...  5.325378  1.4969  NaN  NaN
+21  5.422634  1.858690  1.468620 -3.695049  ...  5.324812  1.4448  NaN  NaN
+22  5.011363  1.858340  0.257557 -3.429471  ...  5.324554  1.4448  NaN  NaN
+23  5.451369  1.795701  1.412314 -3.689863  ...  5.324805  1.4448  NaN  NaN
+
+[24 rows x 561 columns]
+0 0 24.095075607299805
+print in the revised function like train_actully_eval
