@@ -11,26 +11,28 @@ The utilization of phosphorescent metal complexes as emissive dopants for organi
 
 ## Requirements
 GNN unsupervised contrastive learning:
-numpy                     1.21.6 
-python                    3.7.16   
-rdkit                     2020.09.1 
-scikit-learn              1.0.2      
-scipy                     1.7.3   
-tensorboard               1.15.0  
-torch-geometric           2.0.0      
-torch-scatter             2.0.9      
-torch-sparse              0.6.12     
-tqdm                      4.65.0   
+
+numpy: 1.21.6   
+python: 3.7.16     
+rdkit: 2020.09.1   
+scikit-learn: 1.0.2        
+scipy: 1.7.3     
+tensorboard: 1.15.0    
+torch-geometric: 2.0.0        
+torch-scatter: 2.0.9        
+torch-sparse: 0.6.12       
+tqdm: 4.65.0    
 
 
 
 ML-head and visualization:
-Python                    3.7.0
-rdkit                     2020.09.1.0
-scikit-learn              0.23.2
-hyperopt                  0.2.7
-shap                      0.41.0
-PDPbox                    0.2.1
+
+Python: 3.7.0  
+rdkit: 2020.09.1.0  
+scikit-learn: 0.23.2  
+hyperopt: 0.2.7  
+shap: 0.41.0  
+PDPbox: 0.2.1  
 
 Detials can be seen at environment_requirements.txt
 
@@ -60,16 +62,14 @@ The dataset directory should look like this:
 
 ## Usage
 
-1.The data is set within each task.
+The data is set within each task.
 
 ## Results
 
-```bash
-# Results and trained models can be in each task and correlated part in the paper.
+Results and the trained models can be found in each task and the correlated part in the paper.
 
-```
 
 ## Note
 
 - The dataset, model, and code are for non-commercial research purposes only.
-- If there are any questions, please contace me freely.
+- If there are any questions, please contact me freely.
